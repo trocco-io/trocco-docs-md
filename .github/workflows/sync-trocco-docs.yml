@@ -1,0 +1,60 @@
+name: Sync trocco documents
+
+on:
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Create temporary directory
+        run: mkdir -p tmp/trocco-source
+
+      - name: Checkout trocco-help-document
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          repository: primenumber-dev/trocco-help-document
+          path: tmp/trocco-source
+          ssh-key: ${{ secrets.HELP_DOCUMENT_DEPLOY_KEY }}
+
+      - name: Remove existing trocco directory
+        run: rm -rf trocco
+
+      - name: Create trocco directory
+        run: mkdir -p trocco
+
+      - name: Copy markdown files (flat structure)
+        run: |
+          find tmp/trocco-source/docs_public/trocco/ja -type f -name "*.md" | while read file; do
+            cp "$file" trocco/$(basename "$file")
+          done
+
+      - name: Cleanup source directory
+        run: rm -rf tmp/trocco-source
+
+      - name: Check for HTML comments in markdown files
+        run: |
+          # Allow <!-- textlint-disable --> / <!-- textlint-enable --> only (flexible whitespace)
+          if grep -rPn '<!--(?!\s*textlint-(disable|enable)\s*-->)' trocco/; then
+            echo "Error: HTML comments found in markdown files"
+            exit 1
+          fi
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add trocco/
+          git commit -m "ci: update trocco documents"
+          git push origin main
