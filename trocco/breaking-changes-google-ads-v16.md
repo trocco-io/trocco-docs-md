@@ -1,0 +1,338 @@
+---
+articleId: 1a7cd7a2-f2e2-4dcc-a4b6-aaafaa01c6e2
+slug: breaking-changes-google-ads-v16
+title: 2024/05/16 転送元Google Adsの破壊的変更について
+parentCategoryId: d793cab3-1864-4bbf-bd4f-8536b769855d
+languageCode: ja
+---
+## 概要
+
+**2024年05月22日（水）の10時から16時**の間に、転送元Google Adsで利用しているGoogle Ads APIのアップデートが行われます。
+本ページでは、Google Ads APIのアップデートに伴う、転送元Google Adsの破壊的変更について説明いたします。
+
+## 変更概要
+
+転送元Google Adsで利用しているGoogle Ads API v14.1の廃止に伴い、Google Ads API v16へアップデートを行います。
+削除・変更されるリソース/フィールドを含む転送設定は、アップデート前に該当項目を削除いただくか、アップデート後に変更先への更新をお願いいたします。なお、アップデート後に該当項目を含む転送設定は転送ジョブが失敗する可能性がございます。
+
+
+## 変更詳細
+
+### 削除・変更されるリソース
+以下のリソースが削除されます。
+
+- 削除: `product_bidding_category_constant`（後継は `product_category_constant`）
+
+### 削除・変更されるフィールド
+以下のフィールドが削除、または変更されます。
+- 削除: `account_link.hotel_center.hotel_center_id`
+- 削除: `campaign.shopping_setting.sales_country`
+- 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+- 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` ->` ad_group_criterion.listing_group.case_value.product_category.id`
+- 変更: `segments.product_bidding_category_level1` -> `segments.product_category_level1`
+- 変更: `segments.product_bidding_category_level2` -> `segments.product_category_level2`
+- 変更: `segments.product_bidding_category_level3` -> `segments.product_category_level3`
+- 変更: `segments.product_bidding_category_level4` -> `segments.product_category_level4`
+- 変更: `segments.product_bidding_category_level5` -> `segments.product_category_level5`
+- 変更: `metrics.sk_ad_network_conversions` -> `metrics.sk_ad_network_installs`
+- 変更: `ad.image_ad.media_file` -> `ad.image_ad.image_asset.asset`
+
+<details>
+<summary>各リソースごとの削除・変更</summary>
+
+- account_budget
+  - 削除: `customer.offline_conversion_client_summaries`
+- account_budget_proposal
+  - 削除: `customer.offline_conversion_client_summaries`
+- account_link
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `account_link.hotel_center.hotel_center_id`
+- ad_group
+  - 削除: `account_link.hotel_center.hotel_center_id`
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 変更: `segments.product_bidding_category_level1` -> `segments.product_category_level1`
+  - 変更: `segments.product_bidding_category_level2` -> `segments.product_category_level2`
+  - 変更: `segments.product_bidding_category_level3` -> `segments.product_category_level3`
+  - 変更: `segments.product_bidding_category_level4` -> `segments.product_category_level4`
+  - 変更: `segments.product_bidding_category_level5` -> `segments.product_category_level5`
+- ad_group_ad
+  - 変更: `ad.image_ad.media_file` -> `ad.image_ad.image_asset.asset`
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+- ad_group_ad_asset_view
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+- ad_group_ad_label
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+- ad_group_asset
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_audience_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+- ad_group_bid_modifier
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `campaign.shopping_setting.sales_country`
+- ad_group_criterion
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_criterion_label
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_criterion_simulation
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_extension_setting
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_feed
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_label
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_group_simulation
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_parameter
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+    - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- ad_schedule_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- age_range_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- asset
+  - 削除: `customer.offline_conversion_client_summaries`
+- asset_group_asset
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- batch_job
+  - 削除: `customer.offline_conversion_client_summaries`
+- bidding_strategy
+  - 削除: `customer.offline_conversion_client_summaries`
+- billing_setup
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 変更: `metrics.sk_ad_network_conversions` -> `metrics.sk_ad_network_installs`
+  - 変更: `segments.product_bidding_category_level1` -> `segments.product_category_level1`
+  - 変更: `segments.product_bidding_category_level2` -> `segments.product_category_level2`
+  - 変更: `segments.product_bidding_category_level3` -> `segments.product_category_level3`
+  - 変更: `segments.product_bidding_category_level4` -> `segments.product_category_level4`
+  - 変更: `segments.product_bidding_category_level5` -> `segments.product_category_level5`
+- campaign_asset
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_audience_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_bid_modifier
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_budget
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_criterion
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_draft
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_extension_setting
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_feed
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_label
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- campaign_shared_set
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- click_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- conversion_action
+  - 削除: `customer.offline_conversion_client_summaries`
+- custom_interest
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 変更: `metrics.sk_ad_network_conversions` -> `metrics.sk_ad_network_installs`
+  - 変更: `segments.product_bidding_category_level1` -> `segments.product_category_level1`
+  - 変更: `segments.product_bidding_category_level2` -> `segments.product_category_level2`
+  - 変更: `segments.product_bidding_category_level3` -> `segments.product_category_level3`
+  - 変更: `segments.product_bidding_category_level4` -> `segments.product_category_level4`
+  - 変更: `segments.product_bidding_category_level5` -> `segments.product_category_level5`
+- customer_asset
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_client
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_client_link
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_extension_setting
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_feed
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_label
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_manager_link
+  - 削除: `customer.offline_conversion_client_summaries`
+- customer_negative_criterion
+  - 削除: `customer.offline_conversion_client_summaries`
+- detail_placement_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- display_keyword_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- distance_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- domain_category
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- dynamic_search_ads_search_term_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- expanded_landing_page_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- extension_feed_item
+  - 削除: `customer.offline_conversion_client_summaries`
+- feed
+  - 削除: `customer.offline_conversion_client_summaries`
+- feed_item
+  - 削除: `customer.offline_conversion_client_summaries`
+- feed_item_target
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- feed_mapping
+  - 削除: `customer.offline_conversion_client_summaries`
+- feed_placeholder_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- gender_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- geographic_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- group_placement_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- hotel_group_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- income_range_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_plan
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_plan_ad_group
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_plan_ad_group_keyword
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_plan_campaign
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_plan_campaign_keyword
+  - 削除: `customer.offline_conversion_client_summaries`
+- keyword_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- label
+  - 削除: `customer.offline_conversion_client_summaries`
+- landing_page_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- location_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- managed_placement_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- media_file
+  - 削除: `customer.offline_conversion_client_summaries`
+- offline_user_data_job
+  - 削除: `customer.offline_conversion_client_summaries`
+- paid_organic_search_term_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- parental_status_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- product_bidding_category_constant リソース自体の削除
+- product_group_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- recommendation
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- remarketing_action
+  - 削除: `customer.offline_conversion_client_summaries`
+- search_term_view
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- shopping_performance_view
+  - 変更: `segments.product_bidding_category_level1` -> `segments.product_category_level1`
+  - 変更: `segments.product_bidding_category_level2` -> `segments.product_category_level2`
+  - 変更: `segments.product_bidding_category_level3` -> `segments.product_category_level3`
+  - 変更: `segments.product_bidding_category_level4` -> `segments.product_category_level4`
+  - 変更: `segments.product_bidding_category_level5` -> `segments.product_category_level5`
+- shared_criterion
+  - 削除: `customer.offline_conversion_client_summaries`
+- shared_set
+  - 削除: `customer.offline_conversion_client_summaries`
+- shopping_performance_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- third_party_app_analytics_link
+  - 削除: `customer.offline_conversion_client_summaries`
+  - 削除: `account_link.hotel_center.hotel_center_id`
+- topic_view
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.level` -> `ad_group_criterion.listing_group.case_value.product_category.level`
+  - 変更: `ad_group_criterion.listing_group.case_value.product_bidding_category.id` -> `ad_group_criterion.listing_group.case_value.product_category.category_id`
+  - 削除: `campaign.shopping_setting.sales_country`
+  - 削除: `customer.offline_conversion_client_summaries`
+- user_list
+  - 削除: `customer.offline_conversion_client_summaries`
+- user_location_view
+  - 削除: `customer.offline_conversion_client_summaries`
+- video
+  - 削除: `customer.offline_conversion_client_summaries`
+</details>
+
+
+## 公式ドキュメント
+- v15 リリースノート
+  - https://developers.google.com/google-ads/api/docs/release-notes#v15
+- v16 リリースノート
+  - https://developers.google.com/google-ads/api/docs/release-notes#v16
+- v14 から v15 の変更点
+  - https://developers.google.com/google-ads/api/diff-tool/v15/versus-v14/diff
+- v15 から v16 の変更点
+  - https://developers.google.com/google-ads/api/diff-tool/v16/versus-v15/diff
