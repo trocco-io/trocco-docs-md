@@ -56,5 +56,9 @@ jobs:
       - name: Commit and push changes
         run: |
           git add trocco/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
           git commit -m "ci: update trocco documents"
           git push origin main
