@@ -11,7 +11,7 @@ languageCode: ja
 
 - [リソース増強オプション](/docs/professional-plan#リソース増強オプション)
 - [同時実行数の上限緩和](/docs/professional-plan#同時実行数の上限緩和)
-- [各種サービス品質保証（SLA）](/docs/professional-plan#各種サービス品質保証sla)
+- [各種サービス品質保証（SLA）](/docs/professional-plan#各種サービス品質保証（sla）)
 - [カスタマイズ可能なサービス](/docs/professional-plan#カスタマイズ可能なサービス)
 
 なお、Professionalプランでは、[チーム機能](/docs/about-team)および[品質チェック設定](/docs/datamart-bigquery#step3：品質チェック設定)を追加料金なしで利用できます。
