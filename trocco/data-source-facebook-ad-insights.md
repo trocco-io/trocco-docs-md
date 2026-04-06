@@ -45,6 +45,7 @@ Instagram広告の実績も、転送元Facebook Ad Insightsで取得できます
 | アトリビューションウィンドウ | No | 指定なし | <details><summary>取得できる項目一覧</summary><ul><li>`1d_view`</li><li>`7d_view`</li><li>`28d_view`</li><li>`1d_click`</li><li>`7d_click`</li><li>`28d_click`</li></ul></details>各項目の詳細については、[Facebook公式ドキュメント - Ads Action Stats](https://developers.facebook.com/docs/marketing-api/reference/ads-action-stats/v23.0)を参照ください。 |
 | アクションの内訳 | No | 指定なし | <details><summary>取得できる項目の一覧</summary><ul><li>`action_device</li>`<li>`action_canvas_component_name`</li><li>`action_carousel_card_id`</li><li>`action_carousel_card_name`</li><li>`action_destination`</li><li>`action_reaction`</li><li>`action_target_id`</li><li>`action_type`</li><li>`action_video_sound`</li><li>`action_video_type`</li></ul></details>各項目の詳細については、[Facebook公式ドキュメント - Ads Action Stats](https://developers.facebook.com/docs/marketing-api/reference/ads-action-stats/v23.0)を参照ください。|
 | 統合アトリビューション設定を有効にする | No | 有効 | 統合アトリビューションを有効にする場合はチェックを入れてください。 |
+| 集計単位 | No | N日単位 / 1日 | データの集計単位を選択します。以下から選択可能です。<ul><li>指定期間全体：指定したデータ取得期間全体で集計されたデータを取得します。</li><li>月単位：月単位で集計されたデータを取得します。</li><li>N日単位：1〜90日の範囲で指定した日数単位で集計されたデータを取得します。</li></ul> |
 
 ## レポートテンプレート読み込み
 

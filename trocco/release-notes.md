@@ -7,6 +7,64 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-04-06
+
+### 転送設定
+
+### 転送元Google Adsのコンディションにカスタム変数を使用可能に
+
+転送元Google Adsのコンディションに対してカスタム変数が使用可能になりました。
+
+### 転送元Google Adsenseのディメンションで選択できる項目が拡充
+
+転送元Google Adsenseのディメンションで`PAGE_URL`を選択できるようになりました。
+
+#### 広告系コネクタで転送時のハッシュ化仕様を変更
+
+一部の広告系コネクタにて、メールアドレスや電話番号などで実行されていた転送時のハッシュ化処理の仕様を変更しました
+詳しくは、[カスタムオーディエンス系コネクタのハッシュ化仕様変更のお知らせ](https://help.trocco.io/hc/ja/articles/5231275334558)を参照ください。
+
+### CDCデータ転送
+
+#### 除外したテーブルがスキーマ更新時のダイアログに表示されるように
+
+スキーマ更新時の確認ダイアログにて、更新対象から除外したテーブルが確認ダイアログに表示されるようになりました。
+
+### その他
+
+#### カスタム変数の単位に「分」を指定可能に
+
+カスタム変数でデータ型に**時刻・日付**を選択した場合に、単位に**分**を指定できるようになりました。
+
+### TROCCO API
+
+#### 転送設定APIの対応コネクターが拡充
+
+転送設定・接続情報APIの操作対象として、以下が追加されました。
+
+- 接続情報 - カオナビ
+- 接続情報 - SmartHR
+- 転送元 - カオナビ
+- 転送元 - SmartHR
+- 転送先 - Redshift
+- 転送先 - Facebook カスタムオーディエンス
+- 転送先 - Braze
+
+対象となったAPIエンドポイントは以下のとおりです。
+
+- 接続情報
+  - [接続情報一覧取得](/apidocs/get-connection-configurations)
+  - [接続情報作成](/apidocs/post-connection-configuration)
+  - [接続情報取得](/apidocs/get-connection-configuration)
+  - [接続情報更新](/apidocs/patch-connection-configuration)
+  - [接続情報削除](/apidocs/delete-connection-configuration)
+- 転送設定
+  - [転送設定一覧取得](/apidocs/get-job-definitions)
+  - [転送設定作成](/apidocs/post-job-definition)
+  - [転送設定詳細取得](/apidocs/get-job-definition)
+  - [転送設定更新](/apidocs/patch-job-definition)
+  - [転送設定削除](/apidocs/delete-job-definition)
+
 ## 2026-03-30
 
 ### 転送設定

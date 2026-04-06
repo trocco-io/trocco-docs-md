@@ -68,10 +68,11 @@ TROCCOでは、dbtコマンドに対して、**オプション引数**および*
 | `dbt build` | プロジェクト内の全リソースをビルドします。 |
 | `dbt deps` | パッケージをインストールします。 |
 | `dbt run` | モデルファイルを実行します。 |
+| `dbt run-operation` | マクロを実行します。<br>下記枠にマクロ名を入力してください。<br>![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/dbt-job-configuration-2024-08-29-18-59-0.png){height="" width="500"}<br>オプションとして `--vars` および `--args` を指定可能です。 |
 | `dbt seed` | アダプターにCSVファイルを転送します。 |
 | `dbt snapshot` | snapshotジョブを実行します。 |
+| `dbt source freshness` | データソースの鮮度をチェックします。 |
 | `dbt test` | テストを実行します。 |
-| `dbt run-operation` | マクロを実行します。<br>下記枠にマクロ名を入力してください。<br>![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/dbt-job-configuration-2024-08-29-18-59-0.png){height="" width="500"} |
 
 
 ## dbtジョブ設定の各種操作

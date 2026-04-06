@@ -40,12 +40,12 @@ Yahoo!広告 APIを利用し、データを取得します。
 
 ### `ReportDefinitionService`にて取得できるフィールド
 
-[Yahoo!マーケティングソリューション 公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v17)の記載のとおりです。
+[Yahoo!マーケティングソリューション 公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v19)の記載のとおりです。
 取得したいレポート種別のcsvファイルを開き、**フィールド名/Field Name**列を参照ください。
 
 :::(Info) (動作区分/Behavior Type)
 
-[公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v17)のcsvファイルにおける**動作区分/Behavior Type**列は、Yahoo!広告 APIにおける絞り込みの動作の種類を表しています。
+[公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v19)のcsvファイルにおける**動作区分/Behavior Type**列は、Yahoo!広告 APIにおける絞り込みの動作の種類を表しています。
 
 - `ATTRIBUTE`：レポートにおける属性を表します。
 - `SEGMENT`：検索の軸を表します。
@@ -60,7 +60,7 @@ Yahoo!広告 APIを利用し、データを取得します。
 :::(Warning) (同時取得できないフィールド)
 
 APIの仕様上、同時に取得できないフィールドの組み合わせが存在します。
-[公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v17)のcsvファイルにおける**組合せ不可フィールド/Not compatible fields**列を参照ください。
+[公式資料](https://github.com/yahoojp-marketing/ads-search-api-documents/tree/master/reports/v19)のcsvファイルにおける**組合せ不可フィールド/Not compatible fields**列を参照ください。
 :::
 
 ### `CampaignExportService`にて取得されるフィールド
