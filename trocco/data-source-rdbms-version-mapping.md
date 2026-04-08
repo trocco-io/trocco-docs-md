@@ -13,10 +13,10 @@ languageCode: ja
 | --- | --- | --- |
 | Amazon Redshift | PostgreSQL JDBC Driver 9.4-1205-JDBC41 | PostgreSQLと同じドライバーを使用 |
 | Db2 for luw | IBM Data Server Driver for JDBC and SQLJ 4.27.25 | 詳細は後述の[Db2 for LUWの互換性について](/docs/data-source-rdbms-version-mapping#db2-for-luwの互換性について)を参照 |
-| Microsoft SQL Server | <ul><li>Microsoft SQLServer JDBC Driver 8.2</li><li>jTDS Driver 1.3.1</li></ul> | 詳細は後述の[Microsoft SQL Serverの互換性について](/docs/data-source-rdbms-version-mapping#microsoft-sql-serverの互換性について)を参照 |
+| Microsoft SQL Server | <ul><li>Microsoft SQLServer JDBC Driver 8.2</li><li>jTDS Driver 1.3.1</li><li>Microsoft SQLServer JDBC Driver 12.6</li></ul> | 詳細は後述の[Microsoft SQL Serverの互換性について](/docs/data-source-rdbms-version-mapping#microsoft-sql-serverの互換性について)を参照 |
 | MySQL | MySQL Connector Java 5.1.49 | 左記はMySQL 8.0系でも動作可能<br>ただし、MySQL 8.0系に追加された`caching_sha2_password`認証機能を利用する場合はSSLを有効にする必要があります。  |
 | Oracle Database | 対応するJDBC jarファイルおよび、Oracle Databaseのバージョンは下記のとおりです。<br><br><ul><li>ojdbc7.jar<ul><li>12.1 または12cR1</li></ul></li><li>ojdbc8.jar<ul><li>12.2 または12cR2</li><li>18.x</li><li>19.x</li><li>21.x</li></ul></li></ul> | 詳細は[Oracle JDBCに関するFAQ](https://www.oracle.com/jp/database/technologies/faq-jdbc.html#01_01)を参照 |
-| PostgreSQL | <ul><li>PostgreSQL JDBC Driver 42.5.1</li><li>PostgreSQL JDBC Driver 9.4-1205-JDBC41</li></ul> | - |
+| PostgreSQL | <ul><li>PostgreSQL JDBC Driver 42.7.4</li><li>PostgreSQL JDBC Driver 42.5.1</li><li>PostgreSQL JDBC Driver 9.4-1205-JDBC41</li></ul> | - |
 
 ## 補足
 
