@@ -1,5 +1,5 @@
 ---
-articleId: a0544b3f-8090-4d77-bb3d-d904c96d8672
+articleId: 3b56c94c-ad13-4a57-947a-a1a7f05baede
 slug: release-note-2026-02
 title: リリースノート-2026年2月
 parentCategoryId: 67a27ae1-e937-4731-a905-0e64c69ffed9

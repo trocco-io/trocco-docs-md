@@ -30,7 +30,7 @@ APIアップデートにより、旧指標は廃止されました。
 
 #### レポート取得の場合
 広告レポート（アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート）
-※STEP1にて指定した項目によっては、組み合わせ不可が原因でエラーが発生する場合があります。具体的な組み合わせ不可能なカラムについては[こちら](https://ads-developers.yahoo.co.jp/reference/ads-display-api/v17/ReportDefinitionService/)を参照してください。
+※STEP1にて指定した項目によっては、組み合わせ不可が原因でエラーが発生する場合があります。具体的な組み合わせ不可能なカラムについては[こちら](https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ReportDefinitionService/)を参照してください。
 カラム項目には以下の値などを設定できます。
 
 | カラム名 | 内容 | 推奨型 | 動作区分（\*1） |
