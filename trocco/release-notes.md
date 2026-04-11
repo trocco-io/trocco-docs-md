@@ -11,11 +11,11 @@ languageCode: ja
 
 ### 転送設定
 
-### 転送元Google Adsのコンディションにカスタム変数を使用可能に
+#### 転送元Google Adsのコンディションにカスタム変数を使用可能に
 
 転送元Google Adsのコンディションに対してカスタム変数が使用可能になりました。
 
-### 転送元Google Adsenseのディメンションで選択できる項目が拡充
+#### 転送元Google Adsenseのディメンションで選択できる項目が拡充
 
 転送元Google Adsenseのディメンションで`PAGE_URL`を選択できるようになりました。
 
