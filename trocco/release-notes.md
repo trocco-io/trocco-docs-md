@@ -7,6 +7,123 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-04-13
+
+### 転送設定
+
+#### 転送元Facebook Ad Insightsでデータ集計期間の選択が可能に
+
+転送元Facebook Ad Insightsで、データの集計期間を指定可能になりました。
+詳しくは[転送元 - Facebook Ad Insights](/docs/data-source-facebook-ad-insights)を参照ください。
+
+#### 転送元Hubspotで選択できるオブジェクトタイプの拡充
+
+転送元Hubspotで、新規に以下のオブジェクトタイプを指定できるようになりました。
+
+- appointments
+- carts
+- communications
+- courses
+- discounts
+- fees
+- invoices
+- listings
+- orders
+- payments
+- services
+- subscriptions
+- taxes
+- users
+
+#### 転送元Salesforceで引用符で囲める最大データ量を指定可能に
+
+転送元SalesforceのSTEP2 詳細設定で、引用符で囲める最大データ量（`max_quoted_size_limit`）を指定可能になりました。
+
+### CDCデータ転送
+
+#### 転送先BigQueryで転送先カラム型の設定が可能に
+
+転送先BigQueryで転送先に出力する際のカラム型の設定が可能になりました。
+詳しくは[CDCデータ転送 - 転送先 - Google BigQuery](/docs/cdc-data-destination-bigquery)を参照ください。
+
+### データマート
+
+#### データマートBigQueryのスキーマ自動追従モードをリリース
+
+データマートBigQueryで、データマートジョブの実行時にクエリのスキーマと出力先テーブルのスキーマ差分を検知・追従できる機能をリリースしました。
+詳しくは[スキーマ自動追従モード](/docs/datamart-bigquery#スキーマ自動追従モード)を参照ください。
+
+#### データマートBigQueryで、ジョブ実行時にBigQueryのラベルが自動付与されるように
+
+データマートBigQueryでジョブを実行した際に、BigQueryから参照できる以下のラベルが付与されるようになりました。
+
+- `trocco_job_id`：ジョブID
+- `trocco_job_type`：ジョブのタイプ
+- `trocco_statement_type`：ステートメントのタイプ
+- `trocco_executor_type`：実行タイプ
+
+#### データマートBigQueryでテーブル・カラムの説明とポリシータグの保持機能を追加
+
+データマートBigQueryで、全件洗い替え時にテーブル・カラムの説明とポリシータグが保持されるようになりました。
+
+### dbt連携
+
+#### dbt連携の実行コマンドを強化
+
+dbt連携の実行コマンドで以下が可能になりました。
+
+- `dbt run-operation` 選択時に `--vars`オプションを利用可能に
+- `dbt source freshness`を利用可能に
+
+### その他
+
+#### PostgreSQL JDBCドライバーのバージョン42.7.4を追加
+
+PostgreSQL接続情報で選択できるJDBCドライバーのバージョンに`42.7.4`を追加しました。
+また、バージョン`42.7.4`を選択した場合に、SSLダイレクトネゴシエーションを有効化できるようになりました。
+
+### コネクタAPIアップデート
+
+#### 転送元Yahoo!検索広告
+
+転送時に使用するYahoo!広告 APIのバージョンを、v17から**v19**へアップデートしました。
+新バージョンについては、[Yahoo!広告 検索広告 API v19 リリースノート │ Yahoo!広告 API](https://ads-developers.yahoo.co.jp/ja/ads-api/developers-guide/ysa-v19.html)を参照ください。
+
+#### 転送元Yahoo!ディスプレイ広告 (運用型)
+
+転送時に使用するYahoo!広告 APIのバージョンを、v17から**v19**へアップデートしました。
+新バージョンについては、[Yahoo!広告 ディスプレイ広告 API v19 リリースノート │ Yahoo!広告 API](https://ads-developers.yahoo.co.jp/ja/ads-api/developers-guide/yda-v19.html)を参照ください。
+
+#### 転送元Google Ads・転送先Google Ads コンバージョン
+
+転送時に使用するGoogle Ads APIのバージョンを、v20から**v21**へアップデートしました。
+新バージョンについては、[Google Ads API v21 Reference - Google for Developers](https://developers.google.com/google-ads/api/reference/rpc/v21/overview)を参照ください。
+
+### TROCCO API
+
+#### 転送設定APIの対応コネクターが拡充
+
+転送設定・接続情報APIの操作対象として、以下が追加されました。
+
+- 接続情報 - バクラク
+- 転送元 - バクラク
+- 転送元 - Yahoo!ディスプレイ広告 (運用型)
+
+対象となったAPIエンドポイントは以下のとおりです。
+
+- 接続情報
+  - [接続情報一覧取得](/apidocs/get-connection-configurations)
+  - [接続情報作成](/apidocs/post-connection-configuration)
+  - [接続情報取得](/apidocs/get-connection-configuration)
+  - [接続情報更新](/apidocs/patch-connection-configuration)
+  - [接続情報削除](/apidocs/delete-connection-configuration)
+- 転送設定
+  - [転送設定一覧取得](/apidocs/get-job-definitions)
+  - [転送設定作成](/apidocs/post-job-definition)
+  - [転送設定詳細取得](/apidocs/get-job-definition)
+  - [転送設定更新](/apidocs/patch-job-definition)
+  - [転送設定削除](/apidocs/delete-job-definition)
+
 ## 2026-04-06
 
 ### 転送設定
