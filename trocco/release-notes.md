@@ -7,6 +7,57 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-04-20
+
+### 転送設定
+
+#### 転送先Salesforceで外部IDによる参照関係フィールドの設定が可能に
+
+転送先Salesforceで、転送元データと参照先オブジェクトの外部IDを照合し、Salesforce ID（SF ID）を自動取得して参照関係フィールドに設定できるようになりました。
+SF IDを事前取得して結合する手間を省き、設定を簡略化できます。
+
+詳しくは、[転送先 - Salesforce](/docs/data-destination-salesforce)を参照ください。
+
+### ワークフロー
+
+#### カスタム変数ループ実行月初・月末を展開可能に
+
+カスタム変数ループ実行の展開設定で、以下の値を指定可能になりました。
+
+- 当月月初
+- 前月末
+- 当月月末
+
+### 接続情報
+
+#### Snowflake接続情報のキーペア認証でパスフレーズ付きの秘密鍵を利用可能に
+
+Snowflake接続情報のキーペア認証を利用する際に、パスフレーズ付きの秘密鍵を利用可能になりました。
+
+### TROCCO API
+
+#### 転送設定APIの対応コネクターが拡充
+
+転送設定・接続情報APIの操作対象として、以下が追加されました。
+
+- 接続情報 - Adobe Marketo Engage
+- 転送元 - Facebook Ad Insights
+
+対象となったAPIエンドポイントは以下のとおりです。
+
+- 接続情報
+  - [接続情報一覧取得](/apidocs/get-connection-configurations)
+  - [接続情報作成](/apidocs/post-connection-configuration)
+  - [接続情報取得](/apidocs/get-connection-configuration)
+  - [接続情報更新](/apidocs/patch-connection-configuration)
+  - [接続情報削除](/apidocs/delete-connection-configuration)
+- 転送設定
+  - [転送設定一覧取得](/apidocs/get-job-definitions)
+  - [転送設定作成](/apidocs/post-job-definition)
+  - [転送設定詳細取得](/apidocs/get-job-definition)
+  - [転送設定更新](/apidocs/patch-job-definition)
+  - [転送設定削除](/apidocs/delete-job-definition)
+
 ## 2026-04-13
 
 ### 転送設定
@@ -3546,7 +3597,7 @@ APIアップデートに伴い、一部破壊的な変更が発生します。
 #### データマートAzure Synapse Analytics
 
 データマートAzure Synapse Analyticsを新たに追加しました。
-詳しくは、[データマート - Azure Synapse Analytics](/docs/datamart-azure-synapse-analytics)を参照ください。
+詳しくは、データマート - Azure Synapse Analyticsを参照ください。
 
 ### 転送設定
 

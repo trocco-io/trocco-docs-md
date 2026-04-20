@@ -10,7 +10,6 @@ languageCode: ja
 TROCCOとお客様が用意したサーバー間でSSHトンネルを張ることで、お客様のデータソースに対してSSHトンネル経由で接続できます。
 下記の接続情報で対応しています。
 
-- Amazon Aurora MySQL
 - Amazon Redshift
 - Azure Synapse Analytics
 - Db2 for LUW

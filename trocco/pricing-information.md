@@ -181,7 +181,6 @@ TROCCOでは以下の料金プランが存在します。
 <details>
    <summary>転送元 - データベース系（Enterprise DBコネクタを除く）</summary>
 
-- [転送元 - Amazon Aurora MySQL](/docs/data-source-aurora-mysql)
 - [転送元 - Amazon DynamoDB](/docs/data-source-dynamo-db)
 - [転送元 - Elasticsearch](/docs/data-source-elasticsearch)
 - [転送元 - Google Cloud Spanner](/docs/data-source-google-cloud-spanner)

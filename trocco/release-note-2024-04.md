@@ -18,7 +18,7 @@ languageCode: ja
 ### データマートAzure Synapse Analyticsが追加 🎉
 
 データマートAzure Synapse Analyticsを新たに追加しました。
-詳しくは、[データマート - Azure Synapse Analytics](/docs/datamart-azure-synapse-analytics)を参照ください。
+詳しくは、データマート - Azure Synapse Analyticsを参照ください。
 
 ![release-note-2024-04-2024-08-29-21-47-0](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/release-note-2024-04-2024-08-29-21-47-0.png){height="" width="50%"}
 
