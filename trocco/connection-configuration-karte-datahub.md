@@ -11,4 +11,4 @@ KARTE Datahubの接続情報を設定する際のDocsとなります。
 ## サービスアカウントJSONキーについて
 
 サービスアカウント JSONキーはKARTE Datahubで発行されたものをご利用ください。
-詳細は [KARTE DatahubのTROCCO連携について](https://developers.karte.io/docs/trocco) をご覧ください。
+詳細は [KARTEサポートサイト](https://support.karte.io/post/7fo4vyd05uqZEoMiyGsKgZ) をご覧ください。
