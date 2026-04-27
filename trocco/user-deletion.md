@@ -29,10 +29,10 @@ languageCode: ja
 ユーザーは以下の手順で削除できます。
 
 1. TROCCO画面右上のメールアドレス部分>**ユーザー管理**を順にクリックします。
-   ![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2024-08-29-4-32-0.png){height="" width="50%"}
+   ![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2026-04-27-18-34-55.png)
 
-2. 削除するユーザーの**編集**をクリックします。
-   ![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2024-08-29-4-32-1.png){height="" width="50%"}
+2. 削除するユーザーの**＞**をクリックします。
+   ![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2026-04-27-18-37-02.png)
 
 3. **三点リーダー**をクリックし、**このユーザーを削除**をクリックします。
    ![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2024-08-29-4-32-2.png){height="" width="50%"}
