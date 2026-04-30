@@ -43,9 +43,9 @@ TROCCOでは以下の料金プランが存在します。
 |[基本コネクタ](/docs/pricing-information#基本コネクタ)|✓|✓|✓|✓|✓|✓|
 |[Enterprise DBコネクタ](/docs/pricing-information#enterprise-dbコネクタ)|✓|-|-|✓|✓|✓|
 |[ログデータ出力用コネクタ](/docs/pricing-information#ログデータ出力用コネクタ)|✓|-|-|✓|✓|✓|
-|[Reverse ETLコネクタ](/docs/pricing-information#reverse-etlコネクタ)|✓|-|-|✓|✓|✓|
+|[Reverse ETLコネクタ](/docs/pricing-information#reverse-etlコネクタ)|✓|-|-|-|✓|✓|
 |[カスタムコネクタ](/docs/pricing-information#カスタムコネクタ)|✓|-|-|-|✓|✓|
-|[転送元HTTP・HTTPSコネクタ](/docs/pricing-information#転送元httphttpsコネクタ)|✓|-|-|✓|✓|✓|
+|[転送元HTTP・HTTPSコネクタ](/docs/pricing-information#転送元httphttpsコネクタ)|✓|-|-|-|✓|✓|
 |[転送元SAP S4/HANAコネクタ](/docs/pricing-information#転送元sap-s4hanaコネクタ)|-|-|-|-|-|[カスタマイズ可能](/docs/professional-plan#カスタマイズ可能なサービス)|
 
 以下は、各コネクタ種別に属するコネクタの一覧です。
@@ -343,9 +343,9 @@ TROCCOでは以下の料金プランが存在します。
 
 |オプション機能|契約可能なプラン|補足|
 |---|---|---|
-|[チーム機能](/docs/about-team)|**Essential**プラン|Professionalプランの場合、追加料金なしで利用可能|
-|[品質チェック設定](/docs/datamart-bigquery#step3：品質チェック設定)|**Essential**プラン|Professionalプランの場合、追加料金なしで利用可能|
-|[TROCCO Web行動ログ](/docs/n-analytics-log)|**Essential**プラン以上|-|
+|[チーム機能](/docs/about-team)|**Essential**プラン以上|Professionalプランの場合、追加料金なしで利用可能|
+|[品質チェック設定](/docs/datamart-bigquery#step3：品質チェック設定)|**Essential**プラン以上|Professionalプランの場合、追加料金なしで利用可能|
+|[TROCCO Web行動ログ](/docs/n-analytics-log)|**Advanced**プラン以上|-|
 |セグメントビルダー|**Professional**プラン|DWHやすでに構築したCDP上の顧客データをもとに、GUI上で属性・行動などの条件を指定して柔軟にセグメントを生成し、各種広告・MA・BIツールへ連携できるノーコード型のデータ抽出・配信ツールです。<br>セグメント抽出条件の履歴管理やジョブ・ユーザー管理などの運用機能も備え、マーケター自身がPDCAを迅速に回せる環境を提供します。また、お客様ごとに独立した環境を構築するため、要件に合わせた高いセキュリティ条件へ適用させることが可能です。|
 |AWS PrivateLink|**Advanced**プラン以上|-|
 
