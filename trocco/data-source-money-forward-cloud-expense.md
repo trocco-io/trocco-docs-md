@@ -1,4 +1,5 @@
 ---
+articleId: db7800d3-bdc8-4af9-88b1-82a95889155c
 slug: data-source-money-forward-cloud-expense
 title: 転送元 - マネーフォワード クラウド経費
 parentCategoryId: b257af88-17fc-4a4d-bf94-dc694a258787

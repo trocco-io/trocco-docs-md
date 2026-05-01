@@ -1,4 +1,5 @@
 ---
+articleId: b6e770fa-09df-4c5f-99b7-375ff5478eb4
 slug: connection-configuration-money-forward-cloud-expense
 title: 接続情報 - マネーフォワード クラウド経費
 parentCategoryId: 4db89ef6-4431-4a1f-a7c6-6c3b8a1a224c
