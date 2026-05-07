@@ -4,7 +4,8 @@ import { fileURLToPath } from "url";
 import { globSync } from "glob";
 import parseMD from "parse-md";
 
-const products = ["trocco", "cometa"] as const;
+// const products = ["trocco", "cometa"] as const;
+const products = ["trocco"] as const;
 type Product = (typeof products)[number];
 
 type Article = {
@@ -30,7 +31,7 @@ const targetLanguage = "ja" as const;
 
 const productLabels: Record<Product, string> = {
   trocco: "TROCCO",
-  cometa: "COMETA",
+  // cometa: "COMETA",
 };
 
 const sectionLabels: Record<string, string> = {
@@ -111,9 +112,9 @@ const getSectionLabel = (part: string) => {
 };
 
 const getArticleUrl = (product: Product, slug: string) => {
-  if (product === "cometa") {
-    return `https://documents.trocco.io/cometa/docs/${slug}`;
-  }
+  // if (product === "cometa") {
+  //   return `https://documents.trocco.io/cometa/docs/${slug}`;
+  // }
 
   return `https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/${slug}.md`;
 };
@@ -231,9 +232,9 @@ const collectArticles = () => {
 
 const buildLlmsTxt = (articles: Article[]) => {
   const lines = [
-    "# TROCCO・COMETA Docs",
+    "# TROCCO Docs",
     "",
-    "TROCCO と COMETA のユーザー向けドキュメント一覧です。",
+    "TROCCOのユーザー向けドキュメント一覧です。",
     "",
   ];
 
@@ -241,10 +242,6 @@ const buildLlmsTxt = (articles: Article[]) => {
     const productArticles = articles
       .filter((article) => article.product === product)
       .sort(compareByPath);
-
-    if (productArticles.length === 0) return;
-
-    lines.push(`## ${productLabels[product]}`, "");
 
     let previousSectionPath: string[] = [];
 
@@ -257,7 +254,7 @@ const buildLlmsTxt = (articles: Article[]) => {
       article.sectionPath.slice(changedSectionIndex).forEach((section, index) => {
         const sectionIndex = changedSectionIndex + index;
         appendBlankLine(lines);
-        lines.push(buildHeading(sectionIndex + 3, section), "");
+        lines.push(buildHeading(sectionIndex + 2, section), "");
       });
 
       lines.push(`- [${escapeLinkText(article.title)}](${article.url})`);
