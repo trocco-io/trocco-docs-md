@@ -68,7 +68,7 @@ HubSpotからデータを転送する設定のDocsです。
 
 | 項目名 | 必須 | デフォルト値 | 内容 |
 | --- | --- | --- | --- |
-| イベントタイプ | Yes | - | 取得するイベントタイプを選択します。<details><summary>選択可能なイベントタイプ一覧</summary><ul><li><code>SENT</code></li><li><code>DROPPED</code></li><li><code>PROCESSED</code></li><li><code>DELIVERED</code></li><li><code>DEFERRED</code></li><li><code>BOUNCE</code></li><li><code>OPEN</code></li><li><code>CLICK</code></li><li><code>PRINT</code></li><li><code>FORWARD</code></li><li><code>STATUSCHANGE</code></li><li><code>SPAMREPORT</code></li></ul></details><br>それぞれのイベントタイプについて、詳しくは[HubSpot公式ドキュメント - Email Events API Overview](https://legacydocs.hubspot.com/docs/methods/email/email_events_overview)の`Event types`を参照ください。 |
+| イベントタイプ | Yes | - | 取得するイベントタイプを選択します。<details><summary>選択可能なイベントタイプ一覧</summary><ul><li><code>SENT</code></li><li><code>DROPPED</code></li><li><code>PROCESSED</code></li><li><code>DELIVERED</code></li><li><code>DEFERRED</code></li><li><code>BOUNCE</code></li><li><code>OPEN</code></li><li><code>CLICK</code></li><li><code>PRINT</code></li><li><code>FORWARD</code></li><li><code>STATUSCHANGE</code></li><li><code>SPAMREPORT</code></li></ul></details><br>それぞれのイベントタイプについて、詳しくは[HubSpot公式ドキュメント - Email Events API Overview](https://developers.hubspot.com/docs/api-reference/legacy/reporting/email-analytics/guide)の`Event types`を参照ください。 |
 | データ取得期間 | No | - | 取得したいデータの開始日時・終了日時を入力できます。 |
 
 #### パイプラインまたはパイプラインステージを選択した場合

@@ -7,6 +7,43 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-05-11
+
+### マネージド転送設定
+
+#### 転送日時カラム設定の共通設定が可能に
+
+マネージド転送設定の新規作成時や共通設定の編集時に、転送日時カラム設定を一括で設定できるようになりました。
+
+### TROCCO API
+
+#### 転送設定APIの対応コネクターが拡充
+
+転送設定APIの操作対象として、以下が追加されました。
+
+- 転送元 - Adobe Marketo Engage
+
+対象となったAPIエンドポイントは以下のとおりです。
+
+- [転送設定一覧取得](/apidocs/get-job-definitions)
+- [転送設定作成](/apidocs/post-job-definition)
+- [転送設定詳細取得](/apidocs/get-job-definition)
+- [転送設定更新](/apidocs/patch-job-definition)
+- [転送設定削除](/apidocs/delete-job-definition)
+
+#### ユーザー取得APIで取得できる情報が拡充
+
+ユーザー取得APIで以下の情報が取得可能になりました。
+
+- `otp_required_for_login`：二段階認証の設定有無
+- `can_use_basic_services`：TROCCOの基本機能の利用可否
+- `can_use_data_catalog`：COMETA（データカタログ）の利用可否
+- `teams`：所属チーム一覧
+
+#### データマート定義APIで対応する書き込みモードが拡充
+
+データマート定義APIで、データマートBigQueryの増分更新・SCD Type 2（履歴保持）の設定に対応しました。
+
 ## 2026-05-07
 
 ### データマート
