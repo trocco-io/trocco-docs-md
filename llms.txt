@@ -326,6 +326,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [カスタム変数ループ実行](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/loop-using-custom-variables.md)
 - [ワークフローデータチェック](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/workflow-data-check.md)
 - [HTTPリクエストタスク](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/workflow-http-request-task.md)
+- [Tableauデータ抽出タスク](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/workflow-tableau-data-extraction-task.md)
 
 ### カスタムコネクタ
 
