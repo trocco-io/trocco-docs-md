@@ -354,6 +354,18 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [カスタム変数について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/custom-variables.md)
 - [スケジュール機能について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/schedule-settings.md)
 
+## etl elt
+
+### connection configurations
+
+- [接続情報 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-hr.md)
+
+### etl configuration
+
+#### source
+
+- [転送元 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-hr.md)
+
 ## データマネジメント
 
 ### データカタログ

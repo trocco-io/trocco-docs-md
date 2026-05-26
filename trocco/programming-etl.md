@@ -21,7 +21,6 @@ languageCode: ja
 ## 対応言語
 
 - Python 3.13
-- Python 3.9
 - Ruby 3.2
 - Ruby 2.7
 
@@ -37,7 +36,6 @@ languageCode: ja
 ライブラリの追加をご依頼される前に、該当のライブラリが標準ライブラリに含まれるかどうかを、下記公式ドキュメントよりご確認ください。
 
 - [Python 3.13 標準ライブラリ](https://docs.python.org/ja/3.13/library/index.html)
-- [Python 3.9 標準ライブラリ](https://docs.python.org/ja/3.9/library/index.html)
 - [Ruby 3.2 標準ライブラリ](https://docs.ruby-lang.org/ja/3.2/library/index.html)
 - [Ruby 2.7 標準ライブラリ](https://docs.ruby-lang.org/ja/2.7.0/library/index.html)
 :::
