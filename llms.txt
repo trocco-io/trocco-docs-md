@@ -505,6 +505,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [リリースノート-2026年2月](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/release-note-2026-02.md)
 - [リリースノート-2026年3月](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/release-note-2026-03.md)
 - [リリースノート-2026年4月](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/release-note-2026-04.md)
+- [リリースノート-2026年5月](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/release-note-2026-05.md)
 - [リリースノート一覧](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/release-notes.md)
 
 ## お知らせ
