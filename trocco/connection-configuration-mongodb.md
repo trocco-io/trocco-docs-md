@@ -16,13 +16,15 @@ MongoDB の接続情報を設定する際のDocsとなります。
 | 接続タイプ | No |  以下より選択してください。<ul><li>スタンダード</li><li>DNS Seed List(SRV)</li></ul><br>MongoDB Atlasをご利用の場合は、**DNS Seed List(SRV)** を選択してください。<br>接続タイプについて、詳しくは[公式ドキュメント - Connection String URI Format](https://www.mongodb.com/docs/manual/reference/connection-string/)を参照ください。|
 | ホスト | Yes | ホスト名またはIPアドレスを入力してください。 |
 | 接続先ポート | Yes | 接続先データベースのポート番号を入力してください。MongoDBのデフォルトポート番号は `27017` です。 |
-| 認証方式 | No | 以下より選択してください。<ul><li>SCRAM_SHA_1</li><li>MONGODB_CR</li><li>サーバのバージョンに基づく<ul><li>バージョン3.0以上の場合：SCRAM_SHA_1を利用します。</li><li>バージョン3.0未満の場合：MONGODB_CRを利用します。</li></ul></li></ul>認証方式について、詳しくは[公式ドキュメント - Authentication](https://www.mongodb.com/docs/ruby-driver/master/reference/authentication/)を参照ください。|
-| ユーザー | No | 認証のためのユーザ名を入力ください。 |
-| パスワード | No | 認証のためのパスワードを入力ください。 |
-| 認証データベース | No | 認証データベース（authSource）を入力ください。未指定の場合、`admin`となります。 |
+| 認証方式 | No | 以下より選択してください。<ul><li>サーバのバージョンに基づく</li><li>SCRAM_SHA_1</li><li>SCRAM_SHA_256</li><li>MONGODB_X509</li></ul>「サーバのバージョンに基づく」を選択した場合は、サーバーが対応する認証方式に応じてSCRAM_SHA_256またはSCRAM_SHA_1を利用します。<br>認証方式について、詳しくは[公式ドキュメント - Authentication](https://www.mongodb.com/ja-jp/docs/ruby-driver/current/security/authentication/)を参照ください。|
+| ユーザー | No | 認証方式にMONGODB_X509**以外**を指定した場合に入力します。認証のためのユーザ名を入力ください。 |
+| パスワード | No | 認証方式にMONGODB_X509**以外**を指定した場合に入力します。認証のためのパスワードを入力ください。 |
+| クライアント秘密鍵 | Yes | 認証方式に**MONGODB_X509**を指定した場合に入力します。クライアント秘密鍵を入力してください。<br>X.509接続について、詳しくは[公式ドキュメント - MongoDB Docs](https://www.mongodb.com/ja-jp/docs/manual/tutorial/configure-x509-client-authentication/)を参照ください。 |
+| クライアント証明書 | Yes | 認証方式に**MONGODB_X509**を指定した場合に入力します。クライアント証明書を入力してください。<br>X.509接続について、詳しくは[公式ドキュメント - MongoDB Docs](https://www.mongodb.com/ja-jp/docs/manual/tutorial/configure-x509-client-authentication/)を参照ください。 |
+| 認証データベース | No | 認証データベース（authSource）を入力ください。<ul><li>認証方式がMONGODB_X509**以外**：未指定の場合`admin`となります。</li><li>認証方式が**MONGODB_X509**：`$external`で固定です。</li></ul> |
 | 読み込み設定 | Yes | 選択肢より選んでください。デフォルトは`primary`となります。<br>読み込み設定について、詳しくは後述の「読み込み設定(Read Preference) について」を参照ください。|
 | 読み込み設定タグ | No | 読み込み設定で`primary`以外を選択した場合に指定できます。<br>詳しくは[読み込み設定タグについて](/docs/connection-configuration-mongodb#読み込み設定タグについて)を参照ください。|
-| 接続タイプ | No | SSHを経由（SSHトンネルを利用）して接続する場合に、**SSH経由で接続**を選択してください。<br>詳しくは、[SSHトンネルを使った接続](/docs/connection-with-ssh-tunnel)を参照ください。  |
+| 接続タイプ | No | SSHを経由（SSHトンネルを利用）して接続する場合に、**SSH経由で接続**を選択してください。<br>詳しくは、[SSHトンネルを使った接続](/docs/connection-with-ssh-tunnel)を参照ください。<br>なお、認証方式に**MONGODB_X509**を指定した場合、SSH経由での接続は選択できません。  |
 
 :::(Info) (MongoDBの認証設定)
 MongoDBは、ユーザー認証設定を行わずとも接続できます。
