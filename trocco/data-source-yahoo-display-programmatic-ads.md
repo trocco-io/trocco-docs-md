@@ -14,12 +14,12 @@ Yahoo!広告 APIを利用し、データを取得します。
 | 項目名 | 必須 | デフォルト値 | 内容 |
 | --- | --- | --- | --- |
 | Yahoo! API接続情報 | Yes | - | Yahoo! APIの接続情報を選択してください。 |
-| 取得方法 | Yes | レポート取得 | レポートで取得したい場合は**レポート取得**、スタッツで取得したい場合は**統計情報取得**を指定してください。 |
 | ベースアカウントID | Yes |  - | 接続情報のYahoo! JAPANビジネスIDが直接権限を持つアカウント（MCCアカウント・広告アカウント）を選択します。<br>選択したアカウント、およびその配下全てのアカウントに対して操作が可能になります。|
 | アカウントID | Yes |  - | 選択したベースアカウントIDで操作可能な、データ取得対象のアカウントIDを入力します。<br>アカウントIDは、ディスプレイ広告の管理画面から確認できます。 |
+| 取得方法 | Yes | レポート取得 | レポートで取得したい場合は**レポート取得**、スタッツで取得したい場合は**統計情報取得**を指定してください。 |
 | タイプ | No | - | ターゲットで統計情報取得を選択した場合、ここでタイプを指定してください。なお、現在<br>・CAMPAIGN<br>・ADGROUP<br>・AD<br>のタイプに対応しております。 |
-| データ取得期間 | Yes | - | データを取得したい期間を指定します。開始日、終了日両方を入力してください。<br>YYMMDD の形式で入力してください。<br>また、[カスタム変数](/docs/custom-variables)を設定することで実際の転送時に対応した日付を選択することも可能です。 |
 | カラム | No | - | 転送したいカラム情報を入力してください。<br>設定できるカラムは取得方法によって異なります。<br>詳細は後述をご参照ください。 |
+| データ取得期間 | Yes | - | データを取得したい期間を指定します。開始日、終了日両方を入力してください。<br>`YYYYMMDD`の形式で入力してください。<br>また、[カスタム変数](/docs/custom-variables)を設定することで実際の転送時に対応した日付を選択することも可能です。 |
 | 削除済み広告を含める | No | 含めない | 取得方法に**レポート取得**を選択した場合のみ指定できます。「含める」を選択すると、削除された広告の情報を含んだレポートを取得できます。 |
 
 :::(Warning) (カラムについて)
@@ -202,6 +202,26 @@ APIアップデートにより、旧指標は廃止されました。
 | IMPRESSION_SHARE | インプレッションシェア | DOUBLE |
 | IMPRESSION_SHARE_BUDGET_LOSS | インプレッションシェア損失率（予算） | DOUBLE |
 | IMPRESSION_SHARE_RANK_LOSS | インプレッションシェア損失率（ランク） | DOUBLE |
+| VIDEO_VIEW_THROUGH_RATE | 動画の再生完了率 | DOUBLE |
+| VIEW_THROUGH_CONVERSIONS | ビュースルーコンバージョン数 | LONG |
+| AVG_CPM | 平均CPM | DOUBLE |
+| AVG_VCPM | 平均vCPM | DOUBLE |
+| INSTALLS | インストール数（パートナー計測） | LONG |
+| COST_PER_INSTALL | インストール単価（パートナー計測） | DOUBLE |
+| CONVERSIONS_AFTER_INSTALL | インストール後のアプリコンバージョン数（パートナー計測） | LONG |
+| CPA_AFTER_INSTALL | インストール後のアプリコンバージョン単価（パートナー計測） | DOUBLE |
+| CONV_VALUE_AFTER_INSTALL | インストール後のアプリコンバージョン価値（パートナー計測） | DOUBLE |
+| CONV_VALUE_AFTER_INSTALL_PER_COST | インストール後のアプリコンバージョン価値（パートナー計測）/コスト | DOUBLE |
+| ALL_CONVERSIONS_AFTER_INSTALL | 全てのインストール後のアプリコンバージョン数（パートナー計測） | LONG |
+| ALL_CONV_VALUE_AFTER_INSTALL | 全てのインストール後のアプリコンバージョン価値（パートナー計測） | DOUBLE |
+| INSTALLS_VIA_CLICK | インストール数（パートナー計測クリック） | LONG |
+| COST_PER_INSTALL_VIA_CLICK | インストール単価（パートナー計測クリック） | DOUBLE |
+| CONVERSIONS_AFTER_INSTALL_VIA_CLICK | インストール後のアプリコンバージョン数（パートナー計測クリック） | LONG |
+| CPA_AFTER_INSTALL_VIA_CLICK | インストール後のアプリコンバージョン単価（パートナー計測クリック） | DOUBLE |
+| CONV_VALUE_AFTER_INSTALL_VIA_CLICK | インストール後のアプリコンバージョン価値（パートナー計測クリック） | DOUBLE |
+| CONV_VALUE_VIA_CLICK_AFTER_INSTALL_PER_COST | インストール後のアプリコンバージョン価値（パートナー計測クリック）/コスト | DOUBLE |
+| ALL_CONVERSIONS_AFTER_INSTALL_VIA_CLICK | 全てのインストール後のアプリコンバージョン数（パートナー計測クリック） | LONG |
+| ALL_CONV_VALUE_AFTER_INSTALL_VIA_CLICK | 全てのインストール後のアプリコンバージョン価値（パートナー計測クリック） | DOUBLE |
 
 （\*2）typeによって指定できる値が異なります。
 - typeが**CAMPAIGN**の場合：**CAMPAIGN_NAME**、**CAMPAIGN_ID**

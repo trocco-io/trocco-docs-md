@@ -53,7 +53,7 @@ OAuth認証を行うと、ユーザーの権限をすべてTROCCOが引き受け
 | ユーザーID | Yes | SalesforceのユーザーIDを入力してください。 |
 | パスワード | Yes | Salesforceのパスワードを入力してください。 |
 | セキュリティトークン | Yes | Salesforceのセキュリティトークンを入力してください。<br>※作成手順は以下にまとまっております。 |
-| セールスフォースエンドポイント | No | セールスフォースエンドポイントを入力してください。<br>未入力の場合は、デフォルトで<br>`https://login.salesforce.com/services/Soap/u/` がセットされます。<br>また、sandbox環境と連携頂く場合は<br>`https://test.salesforce.com/services/Soap/u/` のように設定頂く必要がございます。 |
+| セールスフォースエンドポイント | No | 認証エンドポイントは環境に合わせて以下のいずれかを入力してください。<ul><li>本番環境（推奨）： `https://<私のドメイン>.my.salesforce.com/services/Soap/u/`</li><li>本番環境（デフォルト）： `https://login.salesforce.com/services/Soap/u/`</li><li>Sandbox（推奨）： `https://<私のドメイン>--<環境名>.sandbox.my.salesforce.com/services/Soap/u/`</li><li>Sandbox（デフォルト）： `https://test.salesforce.com/services/Soap/u/`</li></ul>SSO利用やセキュリティ制限により汎用URLでログインできない場合は、必ず「私のドメイン」のURLを入力してください。 |
 
 #### セキュリティトークンの作成方法（ユーザー・パスワード認証）
 ユーザー・パスワード認証を利用する場合、以下の手順に従ってセキュリティートークンを発行してください。
