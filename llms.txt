@@ -358,13 +358,21 @@ TROCCOのユーザー向けドキュメント一覧です。
 
 ### connection configurations
 
+- [接続情報 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-confluence.md)
 - [接続情報 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-hr.md)
+- [接続情報 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-jobcan.md)
+- [接続情報 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-logiless.md)
+- [接続情報 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-wordpress.md)
 
 ### etl configuration
 
 #### source
 
+- [転送元 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-confluence.md)
 - [転送元 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-hr.md)
+- [転送元 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-jobcan.md)
+- [転送元 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-logiless.md)
+- [転送元 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-wordpress.md)
 
 ## データマネジメント
 
