@@ -32,6 +32,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [接続情報 - Calendly](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-calendly.md)
 - [接続情報 - Chatwork](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-chatwork.md)
 - [接続情報 - クラウドサイン](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-cloudsign.md)
+- [接続情報 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-confluence.md)
 - [接続情報 - カスタムコネクタ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-custom-connector.md)
 - [接続情報 - Databricks](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-databricks.md)
 - [接続情報 - Db2 for LUW](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-db2-for-luw.md)
@@ -40,6 +41,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [接続情報 - eセールスマネージャー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-e-sales-manager.md)
 - [接続情報 - Facebook](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-facebook-ad-insights.md)
 - [接続情報 - freee会計](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-accounting.md)
+- [接続情報 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-hr.md)
 - [接続情報 - freee請求書](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-invoice.md)
 - [接続情報 - Freshservice](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-fresh-service.md)
 - [接続情報 - Freshdesk](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freshdesk.md)
@@ -61,12 +63,14 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [接続情報 - HTTP・HTTPS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-http-https.md)
 - [接続情報 - HubSpot](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-hubspot.md)
 - [接続情報 - JIRA](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-jira.md)
+- [接続情報 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-jobcan.md)
 - [接続情報 - カオナビ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-kaonavi.md)
 - [接続情報 - KARTE Datahub](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-karte-datahub.md)
 - [接続情報 - kintone](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-kintone.md)
 - [接続情報 - Klaviyo](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-klaviyo.md)
 - [接続情報 - LINE広告](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-line-ad-api.md)
 - [接続情報 - LINE WORKS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-line-work.md)
+- [接続情報 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-logiless.md)
 - [接続情報 - Adobe Marketo Engage](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-marketo.md)
 - [接続情報 - Microsoft Advertising](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-microsoft-advertising.md)
 - [接続情報 - Microsoft Dynamics 365 CRM](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-microsoft-dynamics-crm.md)
@@ -107,6 +111,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [接続情報 - X Ads (旧Twitter Ads)](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-twitter-ads.md)
 - [接続情報 - Typeform](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-typeform.md)
 - [接続情報 - ValueCommerce](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-valuecommerce.md)
+- [接続情報 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-wordpress.md)
 - [接続情報 - Zendesk Sell](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-zendesk-sell.md)
 - [接続情報 - Zendesk Support](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-zendesk-support.md)
 - [接続情報 - Zoho Books](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-zoho-book.md)
@@ -139,6 +144,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - Chatwork](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-chatwork.md)
 - [転送元 - クラウドサイン](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-cloudsign.md)
 - [転送元 - Amazon CloudWatch Logs](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-cloudwatch-logs.md)
+- [転送元 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-confluence.md)
 - [転送元 - Criteo](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-criteo.md)
 - [転送元 - カスタムコネクタ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-custom-connector.md)
 - [転送元 - Databricks](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-databricks.md)
@@ -151,6 +157,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - Facebook Ad クリエイティブ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-facebook-ads-creative.md)
 - [転送元 - Facebookリード広告](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-facebook-lead-ads.md)
 - [転送元 - freee会計](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-accounting.md)
+- [転送元 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-hr.md)
 - [転送元 - freee請求書](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-invoice.md)
 - [転送元 - Freshservice](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-fresh-service.md)
 - [転送元 - Freshdesk](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freshdesk.md)
@@ -172,6 +179,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - HTTP・HTTPS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-http.md)
 - [転送元 - HubSpot](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-hubspot.md)
 - [転送元 - JIRA](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-jira.md)
+- [転送元 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-jobcan.md)
 - [転送元 - カオナビ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-kaonavi.md)
 - [転送元 - KARTE Datahub](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-karte-datahub.md)
 - [転送元 - kintone](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-kintone.md)
@@ -179,6 +187,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - LINE広告](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-line-ad-api.md)
 - [転送元 - LINE WORKS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-line-work.md)
 - [転送元 - ローカルファイル](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-local-file.md)
+- [転送元 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-logiless.md)
 - [転送元 - Adobe Marketo Engage](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-marketo.md)
 - [転送元 - Microsoft Advertising](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-microsoft-advertising.md)
 - [転送元 - Microsoft Dynamics 365 CRM](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-microsoft-dynamics-crm.md)
@@ -226,6 +235,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - X Ads (旧Twitter Ads)](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-twitter-ads.md)
 - [転送元 - Typeform](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-typeform.md)
 - [転送元 - ValueCommerce](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-valuecommerce.md)
+- [転送元 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-wordpress.md)
 - [転送元 - Yahoo!ディスプレイ広告 (運用型)](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-yahoo-display-programmatic-ads.md)
 - [転送元 - Yahoo!検索広告](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-yahoo-search-ads.md)
 - [転送元 - Zendesk Sell](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-zendesk-sell.md)
@@ -353,26 +363,6 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [複製機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/copy-settings.md)
 - [カスタム変数について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/custom-variables.md)
 - [スケジュール機能について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/schedule-settings.md)
-
-## etl elt
-
-### connection configurations
-
-- [接続情報 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-confluence.md)
-- [接続情報 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-freee-hr.md)
-- [接続情報 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-jobcan.md)
-- [接続情報 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-logiless.md)
-- [接続情報 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-configuration-wordpress.md)
-
-### etl configuration
-
-#### source
-
-- [転送元 - Confluence](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-confluence.md)
-- [転送元 - freee人事労務](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-freee-hr.md)
-- [転送元 - ジョブカン経費精算/ワークフロー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-jobcan.md)
-- [転送元 - LOGILESS](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-logiless.md)
-- [転送元 - WordPress](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-wordpress.md)
 
 ## データマネジメント
 
