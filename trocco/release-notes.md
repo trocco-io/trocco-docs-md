@@ -7,6 +7,21 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-06-08
+
+### UI・UX
+
+#### ユーザー一覧・編集画面で所属チームを確認できるように
+
+ユーザー一覧・編集画面で、対象ユーザーが所属しているチームが表示されるようになりました。
+
+### コネクタAPIアップデート
+
+#### 転送元Facebook Ad Insights
+
+転送元Facebook Ad Insightsで利用しているFacebook APIを、v23から**v25**へアップデートしました。
+新バージョンについて、[Meta for Developers](https://developers.facebook.com/docs/graph-api/changelog/version25.0)を参照ください。
+
 ## 2026-06-01
 
 ### 転送設定

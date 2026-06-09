@@ -10,5 +10,5 @@ languageCode: ja
 Facebook Offline Conversions APIは、2025年05月14日に廃止されました。
 また、Facebookアプリから最終バージョンであるGraph API v16.0を指定できなくなったため、2025年05月14日に本コネクタの提供を終了することになりました。
 
-本件の詳細については、[Meta公式ドキュメント - Offline Conversions API](https://developers.facebook.com/docs/marketing-api/offline-conversions/v23.0)を参照ください。
+本件の詳細については、[Meta公式ドキュメント - Offline Conversions API](https://developers.facebook.com/docs/marketing-api/offline-conversions/v25.0)を参照ください。
 :::

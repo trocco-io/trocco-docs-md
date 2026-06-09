@@ -9,7 +9,7 @@ languageCode: ja
 ユーザー管理についてのDocsです。
 ユーザー管理では、アカウント内のユーザー一覧を確認できます。
 
-![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/about-account-user-2024-08-29-4-53-0.png){height="" width="500"}
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/about-account-user-2026-06-05-09-12-46.png){height="" width="500"}
 
 **アカウント管理者**以上の権限を持つユーザーであれば、ユーザーの招待および各ユーザーの権限設定を編集できます。
 それぞれの操作やTROCCOの権限について、詳しくは以下のドキュメントを参照ください。

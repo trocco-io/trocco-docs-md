@@ -24,7 +24,7 @@ Facebook カスタムオーディエンスに関するDocsです。
 
 :::(Warning) (転送データのフォーマット)
 
-[公式ドキュメント - 複数キーのハッシュ化と正規化](https://developers.facebook.com/docs/marketing-api/audiences/guides/custom-audiences/v23.0#hash)に記載されている表の、「ガイドライン」列に記載されているフォーマットに基づいたデータを転送してください。
+[公式ドキュメント - 複数キーのハッシュ化と正規化](https://developers.facebook.com/docs/marketing-api/audiences/guides/custom-audiences/v25.0#hash)に記載されている表の、「ガイドライン」列に記載されているフォーマットに基づいたデータを転送してください。
 フォーマットに基づかないデータを転送した場合、エラーが発生する場合があります。
 :::
 
@@ -72,7 +72,7 @@ Facebook カスタムオーディエンスに関するDocsです。
 
 転送するデータからカスタムオーディエンスを作成するために、TROCCO上でカラム名や型をマッピングする必要があります。
 TROCCOの転送設定STEP2**カラム定義**タブにて、マッピングを行ってください。
-マッピングするカラムについては、[公式ドキュメント - 複数キーのハッシュ化と正規化](https://developers.facebook.com/docs/marketing-api/audiences/guides/custom-audiences/v23.0#hash)を参照ください。リンク先の表の「キー」列がカラム名に該当します。
+マッピングするカラムについては、[公式ドキュメント - 複数キーのハッシュ化と正規化](https://developers.facebook.com/docs/marketing-api/audiences/guides/custom-audiences/v25.0#hash)を参照ください。リンク先の表の「キー」列がカラム名に該当します。
 
 :::(Warning) (必須カラムについて)
 

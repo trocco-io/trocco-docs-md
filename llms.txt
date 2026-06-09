@@ -196,7 +196,6 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [転送元 - マネーフォワード クラウド会計](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-money-forward-cloud-accounting.md)
 - [転送元 - マネーフォワード クラウド経費](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-money-forward-cloud-expense.md)
 - [転送元 - MongoDB](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-mongodb.md)
-- [転送元 - MySQL binlog (CDC)](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-mysql-binlog.md)
 - [転送元 - MySQL](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-mysql.md)
 - [転送元 - TROCCO Web行動ログ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-n-analytics-log.md)
 - [転送元 - ネクストSFA](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-source-next-sfa.md)
