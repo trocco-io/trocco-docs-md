@@ -385,7 +385,6 @@ TROCCOのユーザー向けドキュメント一覧です。
 
 - [チーム機能について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/about-team.md)
 - [リソースグループ](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/resource-group.md)
-- [SAML認証によるSSOについて](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/saml-authentication-sso.md)
 - [チーム](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/team.md)
 
 ## 運用支援
@@ -418,6 +417,7 @@ TROCCOのユーザー向けドキュメント一覧です。
 - [セキュリティグループやファイアウォール等で許可頂く必要があるIPアドレス](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/global-ip-list.md)
 - [IPアドレスによるアクセス制限について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/ip-address-restriction.md)
 - [パスワードポリシー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/password-policy.md)
+- [SAML認証によるSSOについて](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/saml-authentication-sso.md)
 - [TROCCOのセキュリティに関する事項](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/security-policy.md)
 - [監査ログ機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/about-audit-log.md)
 - [組織名について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/organization-name.md)

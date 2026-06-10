@@ -2,7 +2,7 @@
 articleId: 506615d7-153d-4b1c-ade1-ad5222f7de15
 slug: saml-authentication-sso
 title: SAML認証によるSSOについて
-parentCategoryId: 37229aaf-643d-42f3-8e3b-b14e92fd60f7
+parentCategoryId: aebb80eb-ea38-4c64-8ecf-0bf55f9d16a2
 languageCode: ja
 ---
 ## 概要
