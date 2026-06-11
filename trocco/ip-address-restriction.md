@@ -2,7 +2,7 @@
 articleId: 2b16a479-1ba7-4536-a1e8-c819c1eb6edb
 slug: ip-address-restriction
 title: IPアドレスによるアクセス制限について
-parentCategoryId: aebb80eb-ea38-4c64-8ecf-0bf55f9d16a2
+parentCategoryId: 10ff9083-6f59-48a2-ba36-922d9907305c
 languageCode: ja
 ---
 

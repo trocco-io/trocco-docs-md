@@ -412,12 +412,15 @@ TROCCOのユーザー向けドキュメント一覧です。
 
 ### セキュリティ
 
-- [AWS Systems Manager Session Managerを用いた接続](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-with-aws-systems-manager-session-manager.md)
+#### account security
+
 - [データプレビューの削除について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/data-preview-removal.md)
-- [セキュリティグループやファイアウォール等で許可頂く必要があるIPアドレス](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/global-ip-list.md)
 - [IPアドレスによるアクセス制限について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/ip-address-restriction.md)
-- [パスワードポリシー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/password-policy.md)
 - [SAML認証によるSSOについて](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/saml-authentication-sso.md)
+- [AWS Systems Manager Session Managerを用いた接続](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/connection-with-aws-systems-manager-session-manager.md)
+- [エラーレコードのテーブル表示について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/error-records-table-display.md)
+- [セキュリティグループやファイアウォール等で許可頂く必要があるIPアドレス](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/global-ip-list.md)
+- [パスワードポリシー](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/password-policy.md)
 - [TROCCOのセキュリティに関する事項](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/security-policy.md)
 - [監査ログ機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/about-audit-log.md)
 - [組織名について](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/organization-name.md)

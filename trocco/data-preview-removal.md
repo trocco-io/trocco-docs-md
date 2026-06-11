@@ -2,7 +2,7 @@
 articleId: 47c3be80-10ca-4744-9313-c2a9d2079de1
 slug: data-preview-removal
 title: データプレビューの削除について
-parentCategoryId: aebb80eb-ea38-4c64-8ecf-0bf55f9d16a2
+parentCategoryId: 10ff9083-6f59-48a2-ba36-922d9907305c
 languageCode: ja
 ---
 ## 概要
