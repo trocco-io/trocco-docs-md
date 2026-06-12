@@ -90,7 +90,7 @@ Error: java.lang.RuntimeException: java.util.concurrent.ExecutionException: com.
 グローバル管理者の権限を持つ方が、ユーザーからの承認要求を許可する設定を有効にすることで、**承認要求**ボタンが表示され、解消する可能性があります。
 
 1. グローバル管理者の権限を持つ方が、[Microsoft Entra管理センターの同意とアクセス許可の設定画面](https://portal.azure.com/#view/Microsoft_AAD_IAM/ConsentPoliciesMenuBlade/~/AdminConsentSettings)にアクセスします。
-2. **管理者の同意要求（Admin consent requests）**の設定で、ユーザーが同意できないアプリについて管理者の同意を要求できるよう、設定を**はい（Yes）**に変更します。
+2. 管理者の同意要求（Admin consent requests）の設定で、ユーザーが同意できないアプリについて管理者の同意を要求できるよう、設定をはい（Yes）に変更します。
    詳しくは、Microsoft Entraの公式ドキュメント[管理者の同意要求ワークフローを構成する](https://learn.microsoft.com/ja-jp/entra/identity/enterprise-apps/configure-admin-consent-workflow)を参照ください。
 3. 設定後、ユーザー側で再度**Microsoftアカウント認証**をクリックし、表示された**承認要求**ボタンから管理者に同意を依頼します。
 
