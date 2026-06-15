@@ -90,8 +90,8 @@ API KEYの値は、作成直後のみ確認できます。
 :::
 
 ### 委譲手順
-1. **ユーザー管理**画面から、権限の委譲先となるユーザーの**編集**をクリックします
-![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/about-super-admin-2024-08-29-21-34-2.png){height="" width="500"}
+1. **ユーザー管理**画面から、権限の委譲先となるユーザーのアドレスをクリックします
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/about-super-admin-2026-06-12-09-23-14.png){height="" width="500"}
 
 2. **権限**から**アカウント特権管理者**を選択します
 ![about-super-admin-step2.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/about-super-admin-2024-08-29-21-34-3.png){height="" width="500"}

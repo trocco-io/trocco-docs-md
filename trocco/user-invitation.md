@@ -48,4 +48,4 @@ languageCode: ja
 TROCCOに招待したユーザーが登録完了したかどうかは、ユーザー管理画面より確認できます。
 招待した時点では、ユーザーのステータスは**メール認証待ち**となります。
 
-![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-invitation-2025-04-14-12-57-3.png){height="" width="50%"}
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-invitation-2026-06-12-09-20-33.png){height="" width="50%"}

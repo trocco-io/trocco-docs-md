@@ -31,8 +31,8 @@ languageCode: ja
 1. TROCCO画面右上のメールアドレス部分>**ユーザー管理**を順にクリックします。
    ![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2026-04-27-18-34-55.png)
 
-2. 削除するユーザーの**＞**をクリックします。
-   ![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2026-04-27-18-37-02.png)
+2. 削除するユーザーのアドレスをクリックします。
+   ![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2026-06-12-09-18-19.png)
 
 3. **三点リーダー**をクリックし、**このユーザーを削除**をクリックします。
    ![image](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/user-deletion-2024-08-29-4-32-2.png){height="" width="50%"}
