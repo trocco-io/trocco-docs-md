@@ -17,9 +17,10 @@ languageCode: ja
 | --- | --- | --- | --- |
 | Salesforce接続情報 | ✓ | - | あらかじめ登録してある[Salesforceの接続情報](/docs/connection-configuration-salesforce)から、今回の転送設定に必要な権限を持つものを選択します。|
 | オブジェクト | ✓ | - | レポートデータが格納されているオブジェクトを選択します。 |
-| 転送モード | ✓ | 追記 (`INSERT`) | <ul><li>追記 (`INSERT`)</li><li>`UPSERT`</li><li>更新 (`UPDATE`)<ul><li>[対象オブジェクトのID](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/field_types.htm#i1435616)をキーとして更新します。<br>したがって、対象オブジェクトのIDが転送するデータ内に含まれている必要があります。</li></ul></li></ul> |
+| 転送モード | ✓ | 追記 (`INSERT`) | <ul><li>追記 (`INSERT`)</li><li>`UPSERT`</li><li>更新 (`UPDATE`)<ul><li>[対象オブジェクトのID](https://developer.salesforce.com/docs/atlas.ja-jp.object_reference.meta/object_reference/field_types.htm#i1435616)をキーとして更新します。<br>したがって、対象オブジェクトのIDが転送するデータ内に含まれている必要があります。</li></ul></li><li>削除 (`Soft DELETE`)<ul><li>転送元データで指定したレコードをSalesforceから削除します。<br>削除されたレコードはごみ箱に移動されるため、一定期間内であればSalesforce上で復元できます。</li></ul></li></ul> |
 | UPSERT キー | - | - | 転送モードで`UPSERT`を選択した場合に、キーとなるカラム名を入力できます。|
 | 更新キー | - | - | 転送モードで`UPDATE`を選択した場合に、更新対象のキーとして外部IDを入力できます。<br>レコードID（SFID）をキーとして使用する場合は指定不要です。 |
+| 削除キー | - | `Id` | 転送モードで`削除 (Soft DELETE)`を選択した場合に、削除対象を特定するキーとなる転送元データのカラム名を入力できます。<br><ul><li>`Id`（デフォルト）の場合は、そのカラムの値をSalesforceレコードID（SFID）として直接削除します。</li><li>それ以外のSalesforceフィールド名を指定した場合は、その値をキーにレコードIDを解決してから削除します。</li></ul> |
 | APIバージョン | ✓ | `54.0` | Salesforce APIのバージョンを入力します。 |
 
 ### STEP1 詳細設定

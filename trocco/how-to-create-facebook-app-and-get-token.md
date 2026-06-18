@@ -9,41 +9,40 @@ languageCode: ja
 Facebook広告レポート、コンバージョン、カスタムオーディエンス連携用のアプリ・トークン作成手順に関する説明です。
 
 ## アプリの作成
-まず、Facebookアプリを作成します。
 
- 
-1. **Facebookビジネスマネージャー** > **ビジネス設定**ページを開き、サイドバーの**アプリ** > **追加** > **新しいアプリIDを作成**をクリックします。
+1. [マイアプリ管理ページ](https://developers.facebook.com/apps/)を開き、**アプリを作成**をクリックします。
 
-![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2024-08-29-7-51-0.png){height="" width=""}
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2026-06-17-08-55-01.png)
 
-2. アプリタイプとして、**ビジネス**を選択し、**次へ**をクリックします。
+2. アプリ名とメールアドレスを入力し**次へ**をクリックします。
 
-![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2024-08-29-7-51-1.png){height="" width=""}
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2026-06-17-08-58-37.png)
 
-3. アプリを作成画面にて、各種情報を入力します。アプリの目的は**自分自身または自分のビジネス**を選択してください。
+3. アプリのユースケースで**他の**を選択し、**次へ**をクリックします。
 
-![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2024-08-29-7-51-2.png){height="" width=""}
- 
-以上で、アプリの作成は完了です。
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2026-06-17-09-02-07.png)
 
- 
+4. アプリタイプとして、**ビジネス**を選択し、**次へ**をクリックします。
+
+![](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2026-06-17-09-03-34.png)
+
+5. **アプリを作成**をクリックし、アプリを作成します。
+
 ## システムユーザーの作成、及びトークンの取得
+
 1. ビジネス設定のページを開き、**ユーザー** > **システムユーザー**を選択します。
 
 ![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2024-08-29-7-51-3.png){height="" width=""}
  
 2. **新しいシステムユーザーを追加**をクリックします。
 
- 
 3. システムユーザーの役割として**管理者システムユーザー**を選択します。
 
- 
 4. 作成したシステムユーザーを選択し、**アセットを追加**をクリックします。
 
 ![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/how-to-create-facebook-app-and-get-token-2024-08-29-7-51-4.png){height="" width=""}
  
 以下、システムユーザーに対して広告レポートデータ、コンバージョンへの権限を割り当てます。
-
  
 5. （Facebook広告レポートデータを利用する場合）**広告アカウント**を選択し、**全権限** > **広告アカウントを管理**を選んで**変更を保存**します。
 
