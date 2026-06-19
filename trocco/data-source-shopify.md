@@ -25,12 +25,12 @@ Shopifyのデータを転送する設定のDocsです。
 | オーナータイプ | Yes | - | ターゲットに`metafield`を指定した場合に入力します。<br>メタフィールドが紐づくownerの種別（注文・顧客・商品）を選択します。|
 | 作成日 | No | - | ターゲットに`order`・`customer`・`product`のいずれかを指定した場合に入力できます。<br>検索対象となるデータの作成日について開始日と終了日を入力します。<br>フォーマットは`%Y-%m-%dT%H:%M:%S%z`となります。 |
 | 更新日 | No |  - | ターゲットに`order`・`customer`・`product`のいずれかを指定した場合に入力できます。<br>検索対象となるデータの更新日について開始日と終了日を入力します。<br>フォーマットは`%Y-%m-%dT%H:%M:%S%z`となります。 |
-| 注文ステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>注文ステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2024-07/resources/order#get-orders?status=any)の`status`を参照ください。 |
-| 財務ステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>財務ステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2024-07/resources/order#get-orders?status=any)の`financial_status`を参照ください。 |
-| フルフィルメントステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>フルフィルメントステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2024-07/resources/order#get-orders?status=any)の`fulfillment_status`を参照ください。 |
+| 注文ステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>注文ステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2026-04/resources/order#get-orders?status=any)の`status`を参照ください。 |
+| 財務ステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>財務ステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2026-04/resources/order#get-orders?status=any)の`financial_status`を参照ください。 |
+| フルフィルメントステータス | Yes | -  | ターゲットに`order`を指定した場合に入力します。<br>フルフィルメントステータスを指定します。各項目の説明については[REST Admin API - Order](https://shopify.dev/docs/api/admin-rest/2026-04/resources/order#get-orders?status=any)の`fulfillment_status`を参照ください。 |
 | 公開日 | No  | -  | ターゲットに`product`を指定した場合に入力できます。<br>検索対象となるデータの公開日について開始日と終了日を入力します。<br>フォーマットは`%Y-%m-%dT%H:%M:%S%z`となります。 |
-| 商品ステータス | No  | -  | ターゲットに`product`を指定した場合に入力できます。<br>商品ステータスを指定します。各項目の説明については[REST Admin API - Product](https://shopify.dev/docs/api/admin-rest/2024-07/resources/product#get-products?ids=632910392,921728736)の`status`を参照ください。 |
-| 公開ステータス | No  | -  | ターゲットに`product`を指定した場合に入力できます。<br>公開ステータスを指定します。各項目の説明については[REST Admin API - Product](https://shopify.dev/docs/api/admin-rest/2024-07/resources/product#get-products?ids=632910392,921728736)の`published_status`を参照ください。 |
+| 商品ステータス | No  | -  | ターゲットに`product`を指定した場合に入力できます。<br>商品ステータスを指定します。各項目の説明については[REST Admin API - Product](https://shopify.dev/docs/api/admin-rest/2026-04/resources/product#get-products?ids=632910392,921728736)の`status`を参照ください。 |
+| 公開ステータス | No  | -  | ターゲットに`product`を指定した場合に入力できます。<br>公開ステータスを指定します。各項目の説明については[REST Admin API - Product](https://shopify.dev/docs/api/admin-rest/2026-04/resources/product#get-products?ids=632910392,921728736)の`published_status`を参照ください。 |
 
 ## 取得できるデータについて
 
@@ -54,7 +54,7 @@ Shopifyのデータを転送する設定のDocsです。
 |owner_id|long|admin_graphql_api_owner_idの数値部|
 |admin_graphql_api_owner_id|string|メタフィールドが紐付いているオブジェクトのID（GraphQL用）|
 
-各カラムの詳細について、詳しくは[GraphQL Admin API - Metafield](https://shopify.dev/api/admin-graphql/2024-07/objects/Metafield)を参照ください。
+各カラムの詳細について、詳しくは[GraphQL Admin API - Metafield](https://shopify.dev/api/admin-graphql/2026-04/objects/Metafield)を参照ください。
 
 ### トランザクション
 
@@ -99,7 +99,7 @@ Shopifyのデータを転送する設定のDocsです。
 |total_unsettled_set_shop_money_amount|double|ショップ決済金額でキャプチャ可能な金額|
 |total_unsettled_set_sho_money_currency_code|string|ショップ決済通貨でキャプチャ可能な通貨|
 
-各カラムの詳細について、詳しくは[GraphQL Admin API - OrderTransaction](https://shopify.dev/docs/api/admin-graphql/2024-07/objects/OrderTransaction)を参照ください。
+各カラムの詳細について、詳しくは[GraphQL Admin API - OrderTransaction](https://shopify.dev/docs/api/admin-graphql/2026-04/objects/OrderTransaction)を参照ください。
 
 ### コレクション
 
@@ -118,4 +118,4 @@ Shopifyのデータを転送する設定のDocsです。
 |title|string|コレクション名|
 |updated_at|timestamp|更新日時|
 
-各カラムの詳細について、詳しくは[GraphQL Admin API - Collection](https://shopify.dev/docs/api/admin-graphql/2024-07/objects/Collection)を参照ください。
+各カラムの詳細について、詳しくは[GraphQL Admin API - Collection](https://shopify.dev/docs/api/admin-graphql/2026-04/objects/Collection)を参照ください。

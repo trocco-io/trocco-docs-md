@@ -21,9 +21,9 @@ Shopify REST Admin APIは、2024年10月1日をもってレガシーAPIとなり
 REST Admin APIを利用したコネクター（転送元Shopify（廃止予定））時点から取得できた取得項目に関してのカラム名の変更については、Shopify公式ドキュメントを参照ください。
 下記のRest Admin APIのドキュメントのPropertiesでは、GraphQL Admin APIでのパラメーター名が対応する形で説明されています。
 
-- [order](https://shopify.dev/docs/api/admin-rest/2024-04/resources/order)
-- [customer](https://shopify.dev/docs/api/admin-rest/2024-04/resources/customer)
-- [product](https://shopify.dev/docs/api/admin-rest/2024-04/resources/product)
+- [order](https://shopify.dev/docs/api/admin-rest/2026-04/resources/order)
+- [customer](https://shopify.dev/docs/api/admin-rest/2026-04/resources/customer)
+- [product](https://shopify.dev/docs/api/admin-rest/2026-04/resources/product)
 :::
 
 ## 制約
@@ -96,18 +96,18 @@ Bulk operationによる一括取得と比較して処理時間が長くなる可
 
 | 項目名 | 必須 | 内容 |
 | --- | --- | --- |
-| 注文ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2025-01/queries/orders)の`status`を参照ください。 |
-| 財務ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2025-01/queries/orders)の`financial_status`を参照ください。 |
-| フルフィルメントステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2025-01/queries/orders)の`fulfillment_status`を参照ください。 |
-| StaffMemberのid取得 | - | 取得データに[GraphQL Admin API - StaffMember](https://shopify.dev/docs/api/admin-graphql/2025-01/objects/staffmember)の`id`を含めるかどうかを選択できます。<br>[StaffMember](https://shopify.dev/docs/api/admin-graphql/2025-01/objects/staffmember)の`id`を含めるには、ShopifyでAdvanced以上のプランを利用し、かつShopifyアプリに`read_users`scopeを追加する必要があります。|
+| 注文ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2026-04/queries/orders)の`status`を参照ください。 |
+| 財務ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2026-04/queries/orders)の`financial_status`を参照ください。 |
+| フルフィルメントステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2026-04/queries/orders)の`fulfillment_status`を参照ください。 |
+| StaffMemberのid取得 | - | 取得データに[GraphQL Admin API - StaffMember](https://shopify.dev/docs/api/admin-graphql/2026-04/objects/staffmember)の`id`を含めるかどうかを選択できます。<br>[StaffMember](https://shopify.dev/docs/api/admin-graphql/2026-04/objects/staffmember)の`id`を含めるには、ShopifyでAdvanced以上のプランを利用し、かつShopifyアプリに`read_users`scopeを追加する必要があります。|
 
 **ターゲットにmetafieldsを指定した場合**
 
 | 項目名 | 必須 | 内容 |
 | --- | --- | --- |
-| オーナータイプ | - | メタフィールドが紐づく[GraphQL Admin API - OwnerType](https://shopify.dev/docs/api/admin-graphql/2025-01/enums/MetafieldOwnerType)を`product`・`order`・`customer`から選択します。|
+| オーナータイプ | - | メタフィールドが紐づく[GraphQL Admin API - OwnerType](https://shopify.dev/docs/api/admin-graphql/2026-04/enums/MetafieldOwnerType)を`product`・`order`・`customer`から選択します。|
 | オーナーの作成日時 | - | オーナータイプで指定したオーナーの作成日時を基準に、取得するデータの範囲を指定できます。<ul><li>オーナータイプが`product`または`order`の場合：`created_at`カラムの値が基準となります。</li><li>オーナータイプが`customers`の場合：`customer_date`カラムの値が基準となります。</li></ul> |
-| ネームスペースまたはキー | - | 入力する値については、[GraphQL Admin API - Metafield](https://shopify.dev/docs/api/admin-graphql/2025-01/objects/Metafield)を参照ください。<ul><li>ネームスペース：取得するデータの対象をネームスペースで指定できます。</li><li>キー：取得するデータの対象をネームスペースとキーの組み合わせで指定できます。</li></ul>|
+| ネームスペースまたはキー | - | 入力する値については、[GraphQL Admin API - Metafield](https://shopify.dev/docs/api/admin-graphql/2026-04/objects/Metafield)を参照ください。<ul><li>ネームスペース：取得するデータの対象をネームスペースで指定できます。</li><li>キー：取得するデータの対象をネームスペースとキーの組み合わせで指定できます。</li></ul>|
 
 **ターゲットにfulfillment_ordersを指定した場合**
 
@@ -120,5 +120,5 @@ Bulk operationによる一括取得と比較して処理時間が長くなる可
 | 項目名 | 必須 | 内容 |
 | --- | --- | --- |
 | 公開日時 | - | `published_at`カラムの値を基準に、取得するデータの範囲を指定できます。|
-| 商品ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2025-01/queries/products)の`status`を参照ください。 |
-| 公開ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2025-01/queries/products)の`published_status`を参照ください。 |
+| 商品ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2026-04/queries/products)の`status`を参照ください。 |
+| 公開ステータス | - | 入力できる値については、[GraphQL Admin API - Order](https://shopify.dev/docs/api/admin-graphql/2026-04/queries/products)の`published_status`を参照ください。 |
