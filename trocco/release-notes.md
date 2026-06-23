@@ -7,6 +7,50 @@ languageCode: ja
 ---
 本ページでは、毎週のリリースをご紹介しています。
 
+## 2026-06-22
+
+### 転送設定
+
+#### 転送先Salesforceの転送モードで削除（Soft DELETE）を利用可能に
+
+転送先Salesforceの転送モードに**削除（Soft DELETE）**を追加しました。
+詳しくは、[転送先 - Salesforce](/docs/data-destination-salesforce)を参照ください。
+
+### マネージド転送設定
+
+#### 個別に編集した転送設定の上書き要否を選択できるように
+
+これまで、紐づく転送設定を編集した後にマネージド転送設定を編集した場合、紐づく転送設定に対して行った各種変更は上書きされていました。
+今回のリリースで、以下の設定はマネージド転送設定の編集時に上書きの要否を選択できるようになりました。
+
+- 転送日時カラム設定
+- ジョブ設定
+
+### UI・UX
+
+#### ユーザー招待時の権限の初期値がアカウントメンバーに
+
+ユーザー招待時にデフォルトで選択される権限がアカウント管理者からアカウントメンバーに変更されました。
+
+### コネクタAPIアップデート
+
+#### 転送元Shopify・転送元Shopify（廃止予定）
+
+転送時に使用するShopify APIのバージョンを、**2026-04**へアップデートしました。
+新バージョンについて、[Shopify API](https://shopify.dev/changelog?filter=api&api_version=2026-04)のドキュメントを参照ください。
+
+### TROCCO API
+
+#### データマート定義APIがRedshiftに対応
+
+データマート定義APIがRedshiftに対応しました。
+
+対象となったAPIエンドポイントは以下のとおりです。
+
+- [データマート定義作成](/apidocs/post-datamart-definition)
+- [データマート定義詳細取得](/apidocs/get-datamart-definition)
+- [データマート定義更新](/apidocs/patch-datamart-definition)
+
 ## 2026-06-15
 
 ### 転送設定
