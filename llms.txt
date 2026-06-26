@@ -517,5 +517,5 @@ TROCCOのユーザー向けドキュメント一覧です。
 
 ## 利用規約
 
-- [TROCCO利用規約 - 2019年01月11日改定・適用版](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/terms-v1-20190111.md)
+- [【旧版】TROCCO利用規約 - 2019年01月11日改定・適用版](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/terms-v1-20190111.md)
 - [TROCCO利用規約 - 最新版](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/terms.md)
