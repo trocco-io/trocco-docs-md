@@ -4,8 +4,7 @@ import { fileURLToPath } from "url";
 import { globSync } from "glob";
 import parseMD from "parse-md";
 
-// const products = ["trocco", "cometa"] as const;
-const products = ["trocco"] as const;
+const products = ["trocco", "cometa"] as const;
 type Product = (typeof products)[number];
 
 type Article = {
@@ -26,12 +25,22 @@ type Frontmatter = {
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const docsRoot = path.join(currentDir, "tmp", "trocco-source", "docs_public");
-const outputPath = path.join(currentDir, "llms.txt");
 const targetLanguage = "ja" as const;
 
-const productLabels: Record<Product, string> = {
-  trocco: "TROCCO",
-  // cometa: "COMETA",
+const productConfig: Record<
+  Product,
+  { outputPath: string; title: string; description: string }
+> = {
+  trocco: {
+    outputPath: path.join(currentDir, "trocco", "llms.txt"),
+    title: "TROCCO Docs",
+    description: "TROCCOのユーザー向けドキュメント一覧です。",
+  },
+  cometa: {
+    outputPath: path.join(currentDir, "cometa", "llms.txt"),
+    title: "COMETA Docs",
+    description: "COMETAのユーザー向けドキュメント一覧です。",
+  },
 };
 
 const sectionLabels: Record<string, string> = {
@@ -112,11 +121,7 @@ const getSectionLabel = (part: string) => {
 };
 
 const getArticleUrl = (product: Product, slug: string) => {
-  // if (product === "cometa") {
-  //   return `https://documents.trocco.io/cometa/docs/${slug}`;
-  // }
-
-  return `https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/trocco/${slug}.md`;
+  return `https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/${product}/${slug}.md`;
 };
 
 const escapeLinkText = (title: string) => {
@@ -230,46 +235,49 @@ const collectArticles = () => {
   return files.map(collectArticle).filter(isArticle);
 };
 
-const buildLlmsTxt = (articles: Article[]) => {
-  const lines = [
-    "# TROCCO Docs",
-    "",
-    "TROCCOのユーザー向けドキュメント一覧です。",
-    "",
-  ];
+const buildLlmsTxt = (product: Product, articles: Article[]) => {
+  const { title, description } = productConfig[product];
+  const lines = [`# ${title}`, "", description, ""];
 
-  products.forEach((product) => {
-    const productArticles = articles
-      .filter((article) => article.product === product)
-      .sort(compareByPath);
+  const productArticles = articles
+    .filter((article) => article.product === product)
+    .sort(compareByPath);
 
-    let previousSectionPath: string[] = [];
+  let previousSectionPath: string[] = [];
 
-    productArticles.forEach((article) => {
-      const changedSectionIndex = getChangedSectionIndex(
-        previousSectionPath,
-        article.sectionPath
-      );
+  productArticles.forEach((article) => {
+    const changedSectionIndex = getChangedSectionIndex(
+      previousSectionPath,
+      article.sectionPath
+    );
 
-      article.sectionPath.slice(changedSectionIndex).forEach((section, index) => {
-        const sectionIndex = changedSectionIndex + index;
-        appendBlankLine(lines);
-        lines.push(buildHeading(sectionIndex + 2, section), "");
-      });
-
-      lines.push(`- [${escapeLinkText(article.title)}](${article.url})`);
-      previousSectionPath = article.sectionPath;
+    article.sectionPath.slice(changedSectionIndex).forEach((section, index) => {
+      const sectionIndex = changedSectionIndex + index;
+      appendBlankLine(lines);
+      lines.push(buildHeading(sectionIndex + 2, section), "");
     });
 
-    lines.push("");
+    lines.push(`- [${escapeLinkText(article.title)}](${article.url})`);
+    previousSectionPath = article.sectionPath;
   });
+
+  lines.push("");
 
   return `${lines.join("\n").trimEnd()}\n`;
 };
 
 const articles = collectArticles();
-const llmsTxt = buildLlmsTxt(articles);
 
-fs.writeFileSync(outputPath, llmsTxt, "utf8");
+products.forEach((product) => {
+  const productArticles = articles.filter(
+    (article) => article.product === product
+  );
+  const { outputPath } = productConfig[product];
 
-console.log(`Generated ${outputPath} with ${articles.length} article links.`);
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, buildLlmsTxt(product, articles), "utf8");
+
+  console.log(
+    `Generated ${outputPath} with ${productArticles.length} article links.`
+  );
+});

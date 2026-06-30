@@ -38,11 +38,11 @@ jobs:
           node-version: 24
           cache: 'pnpm'
 
-      - name: Remove existing trocco directory
-        run: rm -rf trocco
+      - name: Remove existing document directories
+        run: rm -rf trocco cometa
 
-      - name: Create trocco directory
-        run: mkdir -p trocco
+      - name: Create document directories
+        run: mkdir -p trocco cometa
 
       - name: Generate LLMs text
         run: |
@@ -54,6 +54,9 @@ jobs:
           find tmp/trocco-source/docs_public/trocco/ja -type f -name "*.md" | while read file; do
             cp "$file" trocco/$(basename "$file")
           done
+          find tmp/trocco-source/docs_public/cometa/ja -type f -name "*.md" | while read file; do
+            cp "$file" cometa/$(basename "$file")
+          done
 
       - name: Cleanup source directory
         run: rm -rf tmp/trocco-source
@@ -61,10 +64,12 @@ jobs:
       - name: Check for HTML comments in markdown files
         run: |
           # Allow <!-- textlint-disable --> / <!-- textlint-enable --> only (flexible whitespace)
-          if grep -rPn '<!--(?!\s*textlint-(disable|enable)\s*-->)' trocco/; then
-            echo "Error: HTML comments found in markdown files"
-            exit 1
-          fi
+          for dir in trocco cometa; do
+            if grep -rPn '<!--(?!\s*textlint-(disable|enable)\s*-->)' "$dir/"; then
+              echo "Error: HTML comments found in markdown files under $dir/"
+              exit 1
+            fi
+          done
 
       - name: Configure git
         run: |
@@ -73,11 +78,10 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add trocco/
-          git add llms.txt
+          git add trocco/ cometa/
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "ci: update trocco documents"
+          git commit -m "ci: update documents"
           git push origin main
