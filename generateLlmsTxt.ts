@@ -71,6 +71,7 @@ const sectionLabels: Record<string, string> = {
   "060_account-management": "アカウント管理",
   "010_account-user": "ユーザー管理",
   "020_security": "セキュリティ",
+  "010_account-security": "アカウントセキュリティ",
   "070_trocco-action": "TROCCO ACTION",
   "080_n-analytics": "TROCCO Web行動ログ",
   "090_faq": "技術情報",
