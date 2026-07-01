@@ -18,6 +18,8 @@ OAuth認証、またはサービスアカウントでご登録いただいた接
 | Google Spreadsheets接続情報 | Yes | - | あらかじめ登録してある[Google Spreadsheetsの接続情報](/docs/connection-configuration-google-spreadsheets)から、今回の転送設定に必要な権限を持つものを選択します。 |
 | スプレッドシートID | Yes | - | 転送先のスプレッドシートのIDを入力します。<br>IDは、スプレッドシートを開いたときのURLから確認できます。<br>![image.png](https://cdn.document360.io/3a3bae1e-f157-487f-8798-01e9d820e760/Images/Documentation/data-destination-google-spreadsheets-2024-08-29-3-45-0.png) |
 | シート名 |  Yes | - | 転送先のシート名を入力します。<br>シートが存在しない場合は、新規のシートが作成されます。|
+| 出力開始行 | Yes | `1` | 出力するデータの最初の行を入力します。見出しはこの行に書き込まれ、データはその次の行から出力されます。<br>1以上の整数を入力してください。|
+| 出力開始列 | Yes | `A` | 出力を開始する列をアルファベットで入力します。<br>AからZZZまでのアルファベットを入力してください。|
 | タイムゾーン | Yes | `Asia/Tokyo` | timestamp型のデータをどのタイムゾーンで出力するかを選択します。<br>\* スプレッドシート上のtimestamp型データにはタイムゾーンが含まれていないため、転送時にどのタイムゾーンで出力するかを選択する必要があります。|
 | セルの書式設定 | Yes | `USER_ENTERED`<br>（セルの書式設定を適用する） | 出力するセルに書式設定を適用するかどうかを選択します。<br>詳しくは、後述の[セルの書式設定について](/docs/data-destination-google-spreadsheets#セルの書式設定について)を参照ください。|
 | 転送モード | Yes | 全件洗い替え<br>（シート作り直し） | 転送モードを選択します。<br>詳しくは、後述の[転送モードについて](/docs/data-destination-google-spreadsheets#転送モードについて)を参照ください。|

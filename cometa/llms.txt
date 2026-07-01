@@ -1,0 +1,90 @@
+# COMETA Docs
+
+COMETAのユーザー向けドキュメント一覧です。
+
+## COMETAの概要
+
+- [COMETAについて](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/about-data-catalog-v2.md)
+- [利用開始手順](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/for-first-datacatalog-users-v2.md)
+
+## AIチャット
+
+- [【COMETA AI】対話型AIアシスト機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/ai-assist.md)
+
+## 探索
+
+- [データを見つける（アセット・用語検索）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/metadata-search-function-v2.md)
+
+## データベース
+
+- [アセットのメタデータをデータストアに同期する](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/assets-metadata-sync.md)
+- [データの関係を定義する（カラム参照）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/column-reference-v2.md)
+- [データ間の関係を見る・分析する（ER図・JOIN分析）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/erd-and-join-v2.md)
+- [クエリを書く（クエリエディタ）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/query-editor-v2.md)
+- [データを理解する（アセット情報）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/table-information-v2.md)
+
+## ダッシュボード
+
+- [ダッシュボードを理解する（アセット情報）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/dashboard-information.md)
+
+## 用語集
+
+- [用語集アクセスコントロール](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/glossary-access-control-v2.md)
+- [用語集を作る・用語を関連付ける（用語集）](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/glossary-and-term_v2.md)
+
+## クエリ集
+
+- [クエリ集を管理する](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/query-collection.md)
+
+## 管理・連携
+
+### データストア連携管理
+
+- [アセット取り込み機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/automatic-assets-update-v2.md)
+- [データストアの連携・認証 - BigQueryの場合](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-bigquery.md)
+- [カスタムデータベース連携用クエリサンプル](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-custom-database-query-sample.md)
+- [データストアの連携・認証 - カスタムデータベース連携](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-custom-database.md)
+- [データストアの連携・認証 - Amazon Redshiftの場合](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-redshift.md)
+- [データストアの連携・認証 - Snowflakeの場合](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-snowflake.md)
+- [データストアの連携 - Tableauの場合](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-authentication-tableau.md)
+- [データストアコネクション](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-connection.md)
+- [データストア連携管理](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datastore-integrations-v2.md)
+- [dbtメタデータ連携](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/dbt-metadata-integration.md)
+- [アセット取り込み設定](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/fetching-asset-ingestion-settings.md)
+- [メタデータアクセスコントロール](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/metadata-access-control-v2.md)
+
+### メタデータ管理
+
+- [【COMETA AI】メタデータ自動生成機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/ai-metadata-generation.md)
+- [メタデータ自動取得機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/automatic-metadata-fetched-v2.md)
+- [メタデータエクスポート](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/metadata-export-v2.md)
+- [メタデータインポート](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/metadata-import-v2.md)
+- [ユーザー定義メタデータ用テンプレート](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/user-defined-metadata-templates-v2.md)
+- [Microsoft Entra ID 外部インテグレーション設定](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/external-integration-settings-v2.md)
+
+## アカウント・ユーザー管理
+
+- [アカウント・ユーザー設定](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/about-account-user-v2.md)
+- [各COMETAロールでできること](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/cometa-roles-v2.md)
+
+## COMETAの各種仕様
+
+- [COMETAに関する各種用語の定義](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/catalog-glossary-v2.md)
+- [COMETA対応機能一覧](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/datacatalog-supported-functions-list-v2.md)
+- [セキュリティグループやファイアウォール等で許可頂く必要があるIPアドレス](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/global-ip-list.md)
+- [リネージ機能](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/lineage.md)
+
+## FAQ
+
+- [よくある質問](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/cometa-faq.md)
+- [エラーメッセージ集](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/error-message.md)
+- [料金に関する詳細情報](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/pricing-information.md)
+
+## リリースノート
+
+- [リリースノート一覧](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/release-notes.md)
+
+## 利用規約
+
+- [【旧版】COMETA利用規約 - 2024年03月04日適用版](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/terms-v1-20240304.md)
+- [COMETA利用規約 - 最新版](https://raw.githubusercontent.com/trocco-io/trocco-docs-md/refs/heads/main/cometa/terms.md)
